@@ -1,0 +1,22 @@
+.skill {
+    max-width: 1200px;
+
+    .list {
+        list-style: none;
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+    }
+
+    .item {
+        display: inline-block;
+        margin: 15px 0;
+        img {
+            width: 83px;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import '../GlobalComponent/GlobalComponent.scss';
+
+.introduce {
+    margin-left: auto;
+    margin-right: auto;
+
+
+    h1 {
+        font-size: 16rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+    
+    .contact {
+        display: flex;
+        -webkit-clip-path: polygon(0 18%, 100% 0, 100% 100%, 17% 99%);
+        clip-path: polygon(0 18%, 100% 0, 100% 100%, 17% 99%);
+        background-color: $primary-color;
+        height: 45px;
+        width: 45px;
+        margin: 15px 20px;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .contact-icon {
+        margin-left: 6px;
+        margin-top: 3px;
+       font-size: 2.3rem;
+       color: #1a1a1a;
+    }
+}
+
+  
+.typing {
+    text-align: center;
+    width: 25ch;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 2em;
+    opacity: 0;
+}
+
+.typing-show {
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    opacity: 1; 
+}
+
+.active {
+    border-right: 3px solid;
+}
+  
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+      
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
