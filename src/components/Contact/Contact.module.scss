@@ -1,0 +1,43 @@
+@import '../GlobalComponent/GlobalComponent.scss';
+@import '../../scss/mixin';
+
+#contact {
+    @include media-breakpoint-lg() {
+        padding: 0 10px;
+    }
+}
+
+.contact {
+    max-width: 1200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h1 {
+        @include font-header;
+    }
+
+    .icon {
+        font-size: 3rem;
+        color: #202020;text-decoration: none;
+    }
+
+    .title {
+        font-size: 1.8rem;
+        margin-left: 20px;
+        // font-style: italic;
+        color: #202020;
+        font-weight: 300;
+    }
+
+    .title-1 {
+        font-size: 2.2rem;
+        margin-left: 20px;
+        color: #202020;
+        font-weight: 300;
+    }
+
+    .contact-block {
+        @include media-breakpoint-md() {
+            margin-top: 10px;
+        }
+    }
+}

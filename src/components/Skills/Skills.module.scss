@@ -1,22 +1,33 @@
+@import '../GlobalComponent/GlobalComponent.scss';
+@import '../../scss/mixin';
+
 .skill {
     max-width: 1200px;
-
+    position: relative;
+    margin-bottom: 120px;
     .list {
         list-style: none;
     }
 
     h1 {
-        text-align: center;
-        font-weight: 700;
-        font-size: 3.2rem;
-        text-transform: uppercase;
+        @include font-header;
+        @include media-breakpoint-sm() {
+            font-size: 6vw;
+        }
     }
 
     .item {
         display: inline-block;
-        margin: 15px 0;
+        // margin: 15px 0;
+        padding: 20px;
+        border-radius: 100%;
         img {
-            width: 83px;
+            width: 63px;
+
+            @include media-breakpoint-md() {
+                width: 47px;
+            }
         }
     }
 }
+

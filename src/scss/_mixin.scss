@@ -29,3 +29,12 @@
         @content;
      }
 }
+
+@mixin font-header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+}
