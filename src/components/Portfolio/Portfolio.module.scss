@@ -126,14 +126,17 @@
             padding-left: 15px;
             @include media-breakpoint-lg() {
                 padding: 0;
-                margin: 0;
+                margin: 30px 0px 0px;
             }
             h1 {
                 color: #fff; 
                 text-align: left;
-                font-size: 4rem;
+                font-size: 3rem;
                 margin-bottom: 20px;
-              
+                
+                @include media-breakpoint-md() {
+                    font-size: 5vw;
+                }
             }
 
             h3 {
