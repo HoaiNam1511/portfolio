@@ -54,7 +54,7 @@ function Contact() {
                         )}
                     >
                         <PlaceIcon className={cx("icon")} />
-                        <div className={cx("title")}>Ha Noi, Viet Nam</div>
+                        <div className={cx("title-1")}>Ha Noi, Viet Nam</div>
                     </div>
                 </div>
                 <div
@@ -73,7 +73,7 @@ function Contact() {
                         )}
                     >
                         <MailIcon className={cx("icon")} />
-                        <div className={cx("title")}>
+                        <div className={cx("title-1")}>
                             chuhoainam00@gmail.com
                         </div>
                     </div>

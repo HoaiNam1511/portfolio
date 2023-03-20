@@ -26,6 +26,9 @@
         // font-style: italic;
         color: #202020;
         font-weight: 300;
+        @include media-breakpoint-lg() {
+            margin-left: 0px;
+        }
     }
 
     .title-1 {
@@ -33,6 +36,10 @@
         margin-left: 20px;
         color: #202020;
         font-weight: 300;
+
+        @include media-breakpoint-lg() {
+            margin-left: 10px;
+        }
     }
 
     .contact-block {
