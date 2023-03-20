@@ -1,9 +1,13 @@
 @import '../GlobalComponent/GlobalComponent.scss';
 @import '../../scss/mixin';
+
+$nav-height: 72px;
+$liner-color: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+
 .header {
     position: fixed;
     z-index: 1000;
-    height: 72px;
+    height: $nav-height;
     background-color: #fff;
     // background-color: red;
     .nav {
@@ -13,10 +17,79 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-
+        height: $nav-height;
         @include media-breakpoint-xl() {
             padding-left: 10px;
             padding-right: 10px;
+        }
+    }
+
+    .menu-btn {
+        margin-right: 25px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: $nav-height;
+        width: 60px;
+        cursor: pointer;
+        transition: all .5s ease-in-out; 
+    }
+
+    .menu-btn_burger {
+        width: 40px;
+        height: 5px;
+        background-color: #000;
+        border-radius: 5px;
+        background-image: $liner-color;
+        //box-shadow: 0 2px 5px rgba(255,101,45,.2);
+        transition: all .5s ease-in-out;
+        
+        @include media-breakpoint-md() {
+            width: 36px;
+            height: 4px;
+        }
+
+        &::before, &::after{
+            content: "";
+            background-image: inherit;
+            position: absolute;
+            width: 40px;
+            height: 5px;
+            background-color: #000;
+            border-radius: 5px;
+            //box-shadow: 0 2px 5px rgba(255,101 45,.2);
+            transition: all .5s ease-in-out;
+
+            @include media-breakpoint-md() {
+                width: 36px;
+                height: 4px;
+            }
+        }
+
+        &::before {
+            transform: translateY(13px);
+        }
+
+        &::after {
+            transform: translateY(-13px);
+        }
+    }
+
+    .menu-open  {
+        .menu-btn_burger {
+            transform: translateX(-50px);
+            background: transparent;
+            box-shadow: none;
+            &::before {
+                background-image: $liner-color;
+                transform: rotate(45deg) translate(35px, -35px);
+            }
+    
+            &::after {
+                background-image: $liner-color;
+                transform: rotate(-45deg) translate(35px, 35px);
+            }
         }
     }
 
@@ -24,18 +97,40 @@
         text-decoration: none;
         font-size: 3rem;
         font-weight: bold;
-        background-image: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+        background-image: $liner-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
+        @include media-breakpoint-md() {
+            font-size: 2.7rem
+        }
+
         @include media-breakpoint-sm() {
-            font-size: 5vw;
+            font-size: 2.5rem
         }
     }
     
     .nav-list {
         font-weight: 500;
+        display: flex;
+        @include media-breakpoint-lg() {
+            height: calc(100vh - 72px);
+            width: 300px;
+            background-image: $liner-color;
+            transform: translateX(calc(-100% + -11px));
+            transition: all .7s;
+            display: flex;
+            flex-direction: column;
+        }
     }
+
+    .nav-list_active {
+        @include media-breakpoint-lg() {
+            transform: translateX(calc(0% - 10px));
+            transition: all .7s;
+        }
+    }
+
     
     .nav-item {
         list-style: none;
@@ -43,14 +138,31 @@
         font-size: 1.6rem;
         display: inline-block;
         transition: all 1s;
+
         &:hover {
             cursor: pointer;
             text-decoration: none;
-            background-image: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+            background-image: $liner-color;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all 1s;
+
+            @include media-breakpoint-lg() {
+                background-image: -webkit-linear-gradient(0deg, #fff 0%, #fff 100%);
+            }
         }
+
+        @include media-breakpoint-lg() {
+            margin: 0;
+            color: #fff;
+            font-size: 2rem;
+            padding: 10px 20px;
+        }
+    }
+
+    .nav-icon {
+        font-size: 2.2rem;
+        margin-right: 20px;
     }
 }
 

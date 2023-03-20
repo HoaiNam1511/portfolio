@@ -31,7 +31,7 @@ function Project() {
         >
             <div className={cx("popup", { active: popupShow })}>
                 {project && (
-                    <div className={cx("d-flex", "popup-content")}>
+                    <div className={cx("d-flex row g-0", "popup-content")}>
                         {/* Btn close */}
                         <button
                             onClick={() => setPopupShow(false)}
@@ -41,7 +41,12 @@ function Project() {
                         </button>
 
                         {/* Image container */}
-                        <div className={cx("image-container")}>
+                        <div
+                            className={cx(
+                                "col-12 col-xxl-6 col-xl-6 col-lg-6",
+                                "image-container"
+                            )}
+                        >
                             <div className={cx("image-wrapper")}>
                                 <img
                                     className={cx("main-image")}
@@ -73,7 +78,12 @@ function Project() {
                         </div>
 
                         {/* Description  */}
-                        <div className={cx("description")}>
+                        <div
+                            className={cx(
+                                "col-12 col-xxl-6 col-xl-6 col-lg-6",
+                                "description"
+                            )}
+                        >
                             <h1>{project.name}</h1>
                             <h3>
                                 <strong>Description</strong>:{" "}
