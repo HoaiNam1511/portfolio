@@ -4,8 +4,9 @@
 .skill {
     max-width: 1200px;
     position: relative;
-    margin-bottom: 120px;
+    margin-bottom: 130px;
     .list {
+        padding: 0;
         list-style: none;
     }
 
@@ -17,7 +18,8 @@
     }
 
     .item {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
         // margin: 15px 0;
         padding: 20px;
         border-radius: 100%;
@@ -27,6 +29,21 @@
             @include media-breakpoint-md() {
                 width: 47px;
             }
+        }
+    }
+
+    .item-background {
+        height: 100px;
+        width: 100px;
+        background-color: rgb(245, 245, 245);
+        //background-color: rgb(245, 245, 245);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        @include media-breakpoint-md() {
+            height: 90px;
+            width: 90px;
         }
     }
 }

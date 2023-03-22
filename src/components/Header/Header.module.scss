@@ -2,13 +2,74 @@
 @import '../../scss/mixin';
 
 $nav-height: 72px;
-$liner-color: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
 
 .header {
     position: fixed;
     z-index: 1000;
     height: $nav-height;
     background-color: #fff;
+
+    .over-lay {
+        position: fixed; 
+        display: block; 
+        width: 100%; 
+        height: 100%; 
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5); 
+        z-index: 2;
+        cursor: pointer; 
+    }
+
+    .touch {
+        background-image: $liner-color;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        list-style: none;
+    }
+
+    .touch-main {
+        position: absolute;
+        right: 0;
+        top: 50vh;
+        right: 10px;
+        margin-top: -5px;
+        transform: translateY(-50%);
+    }
+
+    .touch-active {
+        opacity: .3;
+        transition: opacity 3s;
+    }
+
+    .touch + .touch {
+        margin-top: 10px;
+    }
+
+    .touch-open {
+
+    }
+
+    .touch-container {
+        position: absolute;
+        right: 0;
+        top: 50vh;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+
+    .touch-icon {
+        position: relative;
+        color: #fff;
+        font-size: 2.6rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     // background-color: red;
     .nav {
         max-width: 1200px;

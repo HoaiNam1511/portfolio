@@ -30,7 +30,9 @@ function Skills() {
                             "item"
                         )}
                     >
-                        <img src={item?.logo} alt="" />
+                        <div className={cx("item-background")}>
+                            <img src={item?.logo} alt="" />
+                        </div>
                     </li>
                 ))}
             </ul>

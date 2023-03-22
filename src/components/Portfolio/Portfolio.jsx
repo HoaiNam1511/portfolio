@@ -24,11 +24,20 @@ function Project() {
         setCurrentImg(item.images[0].image);
     };
 
+    useEffect(() => {
+        if (popupShow) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "visible";
+        }
+    }, [popupShow]);
+
     return (
         <div
             id={cx("portfolio")}
             className={cx("container-fluid gx-0 ", "portfolio")}
         >
+            <div className={cx({ "over-lay": popupShow })}></div>
             <div className={cx("popup", { active: popupShow })}>
                 {project && (
                     <div className={cx("d-flex row g-0", "popup-content")}>
@@ -108,8 +117,8 @@ function Project() {
                     </div>
                 )}
             </div>
-            <h1 data-aos="fade-down">Projects</h1>
-            <div className={cx("row gx-0", "list")} data-aos="fade-right">
+            <h1>Projects</h1>
+            <div className={cx("row gx-0", "list")}>
                 {dataProject.map((item, index) => (
                     <div
                         key={index}

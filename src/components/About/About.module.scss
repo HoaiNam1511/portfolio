@@ -1,6 +1,11 @@
 @import '../GlobalComponent/GlobalComponent.scss';
 @import '../../scss/mixin';
 
+$qualification-width: 355px;
+$qualification-width-heigh: 83px;
+$qualification-line: 2px;
+
+
 #about {
     @include media-breakpoint-lg() {
         padding-left: 10px;
@@ -10,7 +15,7 @@
 
 .about {
     max-width: 1200px;
-    margin-bottom: 120px;
+    margin-bottom: 130px;
 
     h1 {
         @include font-header;
@@ -18,14 +23,26 @@
             font-size: 6vw;
         }
     }
+
+    .title-1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .title-2 {
+        text-align: center;
+        margin-top: 30px;
+    }
     
     .about-image {
         object-fit:  cover;
         width: 200px;
         //width: 100%;
         border-radius: 10px;
+        margin-right: 80px;
         @include media-breakpoint-md() {
             width: 100%;
+            margin-right: 0px;
         }
     }
     
@@ -39,7 +56,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-right: 70px;
+        padding-right: 210px;
         @include media-breakpoint-lg() {
             padding-left: 10px;
             padding-right: 10px;
@@ -47,7 +64,6 @@
 
         @include media-breakpoint-sm() {
             font-size: 3.4vw;
-        
         }
     }
     
@@ -82,7 +98,83 @@
             padding: 0 5px;
         }
     }
+
+    ///Qualification
+    .qualification {
+        width: $qualification-width;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .qualification-item {
+        
+    }
+
+    .title {
+        line-height: 1.8;
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        font-size: 1.6rem;
+     
+        @include media-breakpoint-sm() {
+            font-size: 1.4rem;
+        }
+
+        &:nth-child(2), &:nth-child(3) {
+            
+            line-height: 1.6;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: hsl(250, 8%, 45%);
+
+            @include media-breakpoint-sm() {
+                font-size: 1.3rem;
+            }
+        }
+
+        &:nth-child(3) {
+            font-size: 1.4rem;
+            @include media-breakpoint-sm() {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .title-left {
+        justify-content: end;
+    }
+
+    .qualification-icon {
+        margin-right: 10px;
+    }
+
+    .qualification-data {
+        width: calc((#{$qualification-width} / 2 - (#{$qualification-line} / 2)));
+        z-index: 100;
+    }
     
+    .qualification-line {
+        position: relative;
+        width: 2px;
+        background-image: $liner-color;
+        margin: 0px 35px;
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: $liner-color;
+            height: 13px;
+            width: 13px;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+
+        @include media-breakpoint-sm() {
+            margin: 0px 25px;
+        } 
+    }
 }
 
 
