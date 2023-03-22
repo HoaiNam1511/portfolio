@@ -125,7 +125,7 @@ function Project() {
                         onClick={() => isProjectClick(item)}
                         data-content={item.name}
                         className={cx(
-                            "col-6 col-xxl-4 col-xl-4 col-lg-4 col-md-4",
+                            "col-12 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12",
                             "item"
                         )}
                     >

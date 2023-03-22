@@ -24,7 +24,7 @@ $nav-height: 72px;
     }
 
     .touch {
-        background-image: $liner-color;
+        background-image: $linear-color;
         border-radius: 50%;
         width: 50px;
         height: 50px;
@@ -102,7 +102,7 @@ $nav-height: 72px;
         height: 5px;
         background-color: #000;
         border-radius: 5px;
-        background-image: $liner-color;
+        background-image: $linear-color;
         //box-shadow: 0 2px 5px rgba(255,101,45,.2);
         transition: all .5s ease-in-out;
         
@@ -143,12 +143,12 @@ $nav-height: 72px;
             background: transparent;
             box-shadow: none;
             &::before {
-                background-image: $liner-color;
+                background-image: $linear-color;
                 transform: rotate(45deg) translate(35px, -35px);
             }
     
             &::after {
-                background-image: $liner-color;
+                background-image: $linear-color;
                 transform: rotate(-45deg) translate(35px, 35px);
             }
         }
@@ -158,9 +158,10 @@ $nav-height: 72px;
         text-decoration: none;
         font-size: 3rem;
         font-weight: bold;
-        background-image: $liner-color;
+        background-image: $linear-color;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        cursor: pointer;
 
         @include media-breakpoint-md() {
             font-size: 2.7rem
@@ -177,11 +178,12 @@ $nav-height: 72px;
         @include media-breakpoint-lg() {
             height: calc(100vh - 72px);
             width: 300px;
-            background-image: $liner-color;
+            background-image: $linear-color;
             transform: translateX(calc(-100% + -11px));
             transition: all .7s;
             display: flex;
             flex-direction: column;
+            visibility: hidden;
         }
     }
 
@@ -189,6 +191,7 @@ $nav-height: 72px;
         @include media-breakpoint-lg() {
             transform: translateX(calc(0% - 10px));
             transition: all .7s;
+            visibility: visible;
         }
     }
 
@@ -203,7 +206,7 @@ $nav-height: 72px;
         &:hover {
             cursor: pointer;
             text-decoration: none;
-            background-image: $liner-color;
+            background-image: $linear-color;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all 1s;

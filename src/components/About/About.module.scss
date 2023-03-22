@@ -158,12 +158,12 @@ $qualification-line: 2px;
     .qualification-line {
         position: relative;
         width: 2px;
-        background-image: $liner-color;
+        background-image: $linear-color;
         margin: 0px 35px;
         &::before {
             position: absolute;
             content: "";
-            background-image: $liner-color;
+            background-image: $linear-color;
             height: 13px;
             width: 13px;
             border-radius: 50%;

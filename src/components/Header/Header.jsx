@@ -33,22 +33,22 @@ function Header() {
         {
             title: "About",
             icon: PersonIcon,
-            offset: 300,
+            offset: 550,
         },
         {
             title: "Skills",
             icon: EditIcon,
-            offset: 800,
+            offset: 1400,
         },
         {
             title: "Portfolio",
             icon: WorkIcon,
-            offset: 1250,
+            offset: 1890,
         },
         {
             title: "Contact",
             icon: PhoneIcon,
-            offset: 1600,
+            offset: 2500,
         },
     ];
 
@@ -107,6 +107,7 @@ function Header() {
         setCurrentPosition(item);
         setTouchOpen(false);
         setTouchActive(false);
+        setMenuOpen(false);
     };
 
     return (
@@ -167,6 +168,7 @@ function Header() {
                         "col-8 col-xxl-6 col-xl-6 col-lg-6 col-md-10 d-flex",
                         "logo"
                     )}
+                    onClick={() => window.scrollTo(0, 0)}
                 >{`<Hoai Nam />`}</p>
 
                 <div

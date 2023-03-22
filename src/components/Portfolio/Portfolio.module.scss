@@ -17,8 +17,17 @@
     .item {
         position: relative;
         padding:0 5px;
-        margin: 25px 0;
+        margin: 15px 0;
         overflow: hidden;
+        border-radius: 4px;
+
+        @include media-breakpoint-lg() {
+            margin: 15px 0;
+        }
+
+        @include media-breakpoint-sm() {
+            margin: 12px 0;
+        }
         // height: 246px;
         &:hover {
           cursor: pointer;
@@ -83,6 +92,7 @@
         width: 100%;
         display: inline-block;
         height: 100%;
+        border-radius: 4px
     }  
 
     h1 {

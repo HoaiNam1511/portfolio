@@ -1,50 +1,219 @@
 @import '../GlobalComponent/GlobalComponent.scss';
 @import '../../scss/mixin';
 
+$text-color-light: #e6edf8;
+$text-color-dark: #3b3b3b;
+
 #contact {
     @include media-breakpoint-lg() {
-        padding: 0 10px;
+        padding: 0 50px;
+    }
+
+    @include media-breakpoint-md() {
+        padding: 0 30px;
     }
 }
 
 .contact {
     max-width: 1200px;
     margin-top: 100px;
-    margin-bottom: 100px;
-    h1 {
+  
+    .header-title {
         @include font-header;
+        margin-bottom: 0;
+        font-weight: bold;
+        margin: 20px 0 40px;
     }
 
-    .icon {
-        font-size: 3rem;
-        color: #202020;text-decoration: none;
-    }
+    //New
+    .contact-background {
+        padding: 40px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 964px;
+        background-image: $linear-color;
+        min-height: 400px;
+        border-radius: 7px;
 
-    .title {
-        font-size: 1.8rem;
-        margin-left: 20px;
-        // font-style: italic;
-        color: #202020;
-        font-weight: 300;
-        @include media-breakpoint-lg() {
-            margin-left: 0px;
+        
+        @include media-breakpoint-md() {
+            padding: 20px;
         }
+
+    }
+
+    .left-content {
+        position: relative;
+        @include media-breakpoint-lg() {
+            min-height: 350px;
+            margin-bottom: 30px;
+        }
+
+        @include media-breakpoint-md() {
+            
+        }
+    }
+
+    .info-header {
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .info-title, .icon {
+        color: $text-color-light;
+    }
+
+    .info-title {
+        font-weight: 300;
+        font-size: 1.7rem;
+    }
+
+    .title-1, .title-2 {
+        margin: 0;
+        color: $text-color-light;
     }
 
     .title-1 {
-        font-size: 2.2rem;
-        margin-left: 20px;
-        color: #202020;
-        font-weight: 300;
+        font-size: 1.3rem;
+    }
 
-        @include media-breakpoint-lg() {
-            margin-left: 10px;
+    .title-2 {
+        font-size: 1.7rem;
+    }
+
+    .icon {
+        font-size: 2.6rem;
+    }
+
+    .info-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .info-item {
+        padding: 5px 20px;
+        margin-bottom: 10px;
+    }
+
+
+    //Network 
+    .network-container {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .network-item {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .network-item + .network-item {
+        margin-left: 25px;
+    }
+
+    .network-icon {
+        font-size: 2.6rem;
+        color: $text-color-light;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            color: rgb(255, 255, 255);
         }
     }
 
-    .contact-block {
-        @include media-breakpoint-md() {
-            margin-top: 10px;
+    //Form
+    .form {
+        position: relative;
+        background-color: #fff;
+        width: 100%;
+        margin: 0 0 0 70px;
+        padding: 20px 30px;
+        border-radius: 7px;
+
+        @include media-breakpoint-lg() {
+            margin: 0;
         }
+
+        @include media-breakpoint-sm() {
+            padding: 20px 15px;
+        }
+    }
+
+    .contact-form + .contact-form{
+        margin-top: 14px;
+    }   
+    
+    .input-label {
+        font-size: 1.4rem;
+        display: block;
+        color: $text-color-dark;
+    }
+
+    .text-aria {
+        height: 130px;
+        border: 1px solid;
+        width: 100%;
+        padding: 0 10px;
+        outline: none;
+        font-size: 1.5rem;
+    }
+
+    .input {
+        height: 38px;
+        input {
+            border: none;
+            outline: none;
+            height: 100%;   
+            padding: 0 10px;
+            font-size: 1.5rem;
+            flex: 1;
+        }
+    }
+
+    .text-aria , .input {
+        width: 100%;
+        border: 2px solid #e4dfdf;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .icon-container {
+        color: #a19f9f;
+        width: 35px;
+    }
+
+    .input-icon { 
+        font-size: 2.4rem;
+    }
+
+    //Button submit 
+    .btn-submit {
+        margin-top: 30px;
+        height: 40px;
+        width: 130px;
+        font-size: 1.6rem;
+        background-image: $linear-color;
+        border: transparent;
+
+        &:hover {
+            opacity: .9;
+        }
+    }
+
+    .author {
+        padding: 55px;
+        height: 30px;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.4rem;
+        border-top: 1px solid #d6d6d6;
+        margin-bottom: 20px;
     }
 }

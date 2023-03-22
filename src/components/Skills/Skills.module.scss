@@ -23,11 +23,20 @@
         // margin: 15px 0;
         padding: 20px;
         border-radius: 100%;
+
+        @include media-breakpoint-sm() {
+            padding: 13px;
+        }
+
         img {
             width: 63px;
 
             @include media-breakpoint-md() {
                 width: 47px;
+            }
+
+            @include media-breakpoint-md() {  
+                width: 41px;
             }
         }
     }
@@ -44,6 +53,11 @@
         @include media-breakpoint-md() {
             height: 90px;
             width: 90px;
+        }
+
+        @include media-breakpoint-sm() {
+            height: 70px;
+            width: 70px;
         }
     }
 }
