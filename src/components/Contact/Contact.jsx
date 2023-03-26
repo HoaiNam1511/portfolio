@@ -160,7 +160,7 @@ function Contact() {
                 </div>
             </div>
             <div className={cx("author")}>
-                © 2023 Dribbble. All rights reserved.
+                © 2023 ChuHoaiNam. All rights reserved.
             </div>
         </div>
     );
