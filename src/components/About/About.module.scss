@@ -12,6 +12,7 @@ $qualification-line: 2px;
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
+
     h1 {
         @include font-header;
         @include media-breakpoint-sm() {

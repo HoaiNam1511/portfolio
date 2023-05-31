@@ -17,6 +17,10 @@ $text-color-dark: #3b3b3b;
         @include font-header;
         margin-bottom: 0;
         font-weight: bold;
+
+        @include media-breakpoint-sm() {
+            font-size: 6vw;
+        }
     }
 
     //New

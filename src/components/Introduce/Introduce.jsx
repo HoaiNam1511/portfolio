@@ -27,7 +27,7 @@ function Introduce() {
             className={cx("d-flex flex-column align-items-center", "introduce")}
         >
             <h1>HELLO</h1>
-            <h3
+            {/* <h3
                 className={cx(
                     "typing",
                     typing.typingShow.includes(0) ? "typing-show" : "",
@@ -35,8 +35,8 @@ function Introduce() {
                 )}
             >
                 My name is <strong>Chu Hoai Nam</strong>
-            </h3>
-            <h3
+            </h3> */}
+            {/* <h3
                 className={cx(
                     "typing",
                     typing.typingShow.includes(1) ? "typing-show" : "",
@@ -44,7 +44,7 @@ function Introduce() {
                 )}
             >
                 I'm a front-end developer
-            </h3>
+            </h3> */}
             <div className={cx("d-flex")}>
                 <a
                     data-aos="fade-up"
