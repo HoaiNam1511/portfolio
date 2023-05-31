@@ -90,11 +90,13 @@
         object-fit: contain;
     }
 
-    h1 {
+    h2 {
         @include font-header;
         @include media-breakpoint-sm() {
             font-size: 6vw;
         }
+        padding: 0;
+        color: #fff;
     }
 
     .popup {

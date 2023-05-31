@@ -49,6 +49,7 @@ export const dataProject = [
         createAt: "January 11, 2023 - February 20, 2023",
         demo: "https://ananas-shoes-shop.vercel.app",
         source: "https://github.com/HoaiNam1511/shoe-shop-frontend",
+        member: 1,
         images: [
             {
                 image: pj2_1,
@@ -85,6 +86,7 @@ export const dataProject = [
         createAt: "April 11, 2023 - May 18, 2023",
         demo: "https://pizza-restaurant-fe.vercel.app",
         source: "https://github.com/HoaiNam1511/pizza-restaurant-frontend",
+        member: 1,
         images: [
             {
                 image: pj4_1,
@@ -128,6 +130,7 @@ export const dataProject = [
         createAt: "April 21, 2023 - May 25, 2023",
         demo: "https://pizza-restaurant-beta.vercel.app",
         source: "https://github.com/HoaiNam1511/pizza-restaurant",
+        member: 1,
         images: [
             {
                 image: pj3_1,
@@ -171,6 +174,7 @@ export const dataProject = [
         createAt: "November 5, 2022 - January 8, 2023",
         demo: "https://shoes-shop-admin-ten.vercel.app/login",
         source: "https://github.com/HoaiNam1511/shoes-shop",
+        member: 1,
         images: [
             {
                 image: pj1_1,
@@ -196,6 +200,7 @@ export const dataProject = [
         createAt: "November 5, 2022 - January 8, 2023",
         demo: "https://shoes-shop-admin-ten.vercel.app/login",
         source: "https://github.com/HoaiNam1511/shoes-shop",
+        member: 1,
         images: [
             {
                 image: pj5_1,

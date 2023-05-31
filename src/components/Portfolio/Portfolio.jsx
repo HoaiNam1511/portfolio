@@ -96,24 +96,26 @@ function Project() {
 
                         {/* Description  */}
                         <div className={cx("col-12 col-lg-6", "description")}>
-                            <h1>{project.name}</h1>
+                            <h2>{project.name}</h2>
                             <h3>
-                                <strong>Description</strong>:{" "}
+                                <strong>Description</strong>:
                                 {project.description}
                             </h3>
                             <h3>
                                 <strong>Created</strong>: {project.createAt}
                             </h3>
                             <h3>
-                                <strong>Technology</strong>:{" "}
-                                {project.technology}
+                                <strong>Members</strong>: {project.member}
                             </h3>
                             <h3>
-                                <strong>Demo</strong>:{" "}
+                                <strong>Technology</strong>:{project.technology}
+                            </h3>
+                            <h3>
+                                <strong>Demo</strong>:
                                 <a href={project.demo}>{project.demo}</a>
                             </h3>
                             <h3>
-                                <strong>Source</strong>:{" "}
+                                <strong>Source</strong>:
                                 <a href={project.source}>{project.source}</a>
                             </h3>
                         </div>
