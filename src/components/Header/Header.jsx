@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 
 const cx = classNames.bind(styles);
 function Header() {
-    const [scrollTop, setScrollTop] = useState(0);
+    const [scrollTop, setScrollTop] = useState(10);
     const [menuOpen, setMenuOpen] = useState(false);
     const [touchOpen, setTouchOpen] = useState(false);
     const [touchActive, setTouchActive] = useState(false);
@@ -53,6 +53,18 @@ function Header() {
 
     const [currentElement, setCurrentElement] = useState(0);
     const [currentPosition, setCurrentPosition] = useState(navList[0]);
+
+    useEffect(() => {
+        const handleScroll = (event) => {
+            setScrollTop(window.scrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         if (menuOpen) {
