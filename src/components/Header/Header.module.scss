@@ -1,5 +1,5 @@
-@import '../GlobalComponent/GlobalComponent.scss';
-@import '../../scss/mixin';
+@import "../GlobalComponent/GlobalComponent.scss";
+@import "../../scss/mixin";
 
 $nav-height: 72px;
 
@@ -10,17 +10,17 @@ $nav-height: 72px;
     background-color: #fff;
 
     .over-lay {
-        position: fixed; 
-        display: block; 
-        width: 100%; 
-        height: 100%; 
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0,0,0,0.5); 
+        background-color: rgba(0, 0, 0, 0.5);
         z-index: 2;
-        cursor: pointer; 
+        cursor: pointer;
     }
 
     .touch {
@@ -41,7 +41,7 @@ $nav-height: 72px;
     }
 
     .touch-active {
-        opacity: .3;
+        opacity: 0.3;
         transition: opacity 3s;
     }
 
@@ -50,7 +50,6 @@ $nav-height: 72px;
     }
 
     .touch-open {
-
     }
 
     .touch-container {
@@ -94,7 +93,7 @@ $nav-height: 72px;
         height: $nav-height;
         width: 60px;
         cursor: pointer;
-        transition: all .5s ease-in-out; 
+        transition: all 0.5s ease-in-out;
     }
 
     .menu-btn_burger {
@@ -104,14 +103,15 @@ $nav-height: 72px;
         border-radius: 5px;
         background-image: $linear-color;
         //box-shadow: 0 2px 5px rgba(255,101,45,.2);
-        transition: all .5s ease-in-out;
-        
+        transition: all 0.5s ease-in-out;
+
         @include media-breakpoint-md() {
             width: 36px;
             height: 4px;
         }
 
-        &::before, &::after{
+        &::before,
+        &::after {
             content: "";
             background-image: inherit;
             position: absolute;
@@ -120,7 +120,7 @@ $nav-height: 72px;
             background-color: #000;
             border-radius: 5px;
             //box-shadow: 0 2px 5px rgba(255,101 45,.2);
-            transition: all .5s ease-in-out;
+            transition: all 0.5s ease-in-out;
 
             @include media-breakpoint-md() {
                 width: 36px;
@@ -137,7 +137,7 @@ $nav-height: 72px;
         }
     }
 
-    .menu-open  {
+    .menu-open {
         .menu-btn_burger {
             transform: translateX(-50px);
             background: transparent;
@@ -146,7 +146,7 @@ $nav-height: 72px;
                 background-image: $linear-color;
                 transform: rotate(45deg) translate(35px, -35px);
             }
-    
+
             &::after {
                 background-image: $linear-color;
                 transform: rotate(-45deg) translate(35px, 35px);
@@ -164,14 +164,14 @@ $nav-height: 72px;
         cursor: pointer;
 
         @include media-breakpoint-md() {
-            font-size: 2.7rem
+            font-size: 2.7rem;
         }
 
         @include media-breakpoint-sm() {
-            font-size: 2.5rem
+            font-size: 2.5rem;
         }
     }
-    
+
     .nav-list {
         font-weight: 500;
         display: flex;
@@ -180,7 +180,7 @@ $nav-height: 72px;
             width: 300px;
             background-image: $linear-color;
             transform: translateX(calc(-100% + -11px));
-            transition: all .7s;
+            transition: all 0.7s;
             display: flex;
             flex-direction: column;
             visibility: hidden;
@@ -190,18 +190,17 @@ $nav-height: 72px;
     .nav-list_active {
         @include media-breakpoint-lg() {
             transform: translateX(calc(0% - 10px));
-            transition: all .7s;
+            transition: all 0.7s;
             visibility: visible;
         }
     }
 
-    
     .nav-item {
         list-style: none;
         margin: 0 25px;
         font-size: 1.6rem;
         display: inline-block;
-        transition: all 1s;
+        transition: all 3s linear;
 
         &:hover {
             cursor: pointer;
@@ -209,10 +208,14 @@ $nav-height: 72px;
             background-image: $linear-color;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            transition: all 1s;
+            transition: all 3s linear;
 
             @include media-breakpoint-lg() {
-                background-image: -webkit-linear-gradient(0deg, #fff 0%, #fff 100%);
+                background-image: -webkit-linear-gradient(
+                    0deg,
+                    #fff 0%,
+                    #fff 100%
+                );
             }
         }
 
@@ -232,7 +235,6 @@ $nav-height: 72px;
 
 .active-shadows {
     // box-shadow: 0px 1px 10px black;
-    transition: box-shadow .3s;
+    transition: box-shadow 0.3s;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
-

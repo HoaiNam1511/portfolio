@@ -14,7 +14,7 @@ const cx = classNames.bind(styles);
 
 function About() {
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 3000 });
     }, []);
 
     const listQualification = [
@@ -39,23 +39,21 @@ function About() {
     ];
 
     return (
-        <div id={cx("about")} className={cx("container-fluid gx-0", "about")}>
+        <div
+            id={cx("about")}
+            className={cx("container-fluid gx-0", "about")}
+        >
             <h1>About</h1>
             <h3 className={cx("title-1")}>Introduce</h3>
             <div className={cx("row g-0")}>
-                <div
-                    className={cx(
-                        "col-4 col-xxl-5 col-xl-5 col-lg-5 col-md-5 text-end"
-                    )}
-                >
-                    <img className={cx("about-image")} src={avatar} alt="" />
+                <div className={cx("col-4 col-md-5 text-end")}>
+                    <img
+                        className={cx("about-image")}
+                        src={avatar}
+                        alt=""
+                    />
                 </div>
-                <div
-                    className={cx(
-                        "col-8 col-xxl-7 col-xl-7 col-lg-7 col-md-7",
-                        "about-content"
-                    )}
-                >
+                <div className={cx("col-8 col-md-7", "about-content")}>
                     My name is Nam, i am eager to become a professional
                     front-end developer. I have knowledge HTML, CSS, Javascript,
                     ReactJs, Responsive and i can working backend with NodeJs
@@ -63,7 +61,10 @@ function About() {
                     in work but willing to be supportive, open-minded in
                     teamwork and learn more about new technologies and improve
                     my programming skills.
-                    <a href={cv} download>
+                    <a
+                        href={cv}
+                        download
+                    >
                         <button className={cx("btn-download")}>
                             Download CV
                             <DownloadIcon className={cx("icon")} />

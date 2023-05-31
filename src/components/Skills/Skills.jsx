@@ -8,9 +8,6 @@ import Aos from "aos";
 const cx = classNames.bind(styles);
 
 function Skills() {
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-    }, []);
     return (
         <div
             className={cx(
@@ -24,14 +21,15 @@ function Skills() {
                 className={cx("row gx-0 f-flex justify-content-center", "list")}
             >
                 {listLogo.map((item, index) => (
-                    <li
-                        className={cx(
-                            "col-4 col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-3",
-                            "item"
-                        )}
-                    >
+                    <li className={cx("col-4 col-lg-2 col-sm-3", "item")}>
                         <div className={cx("item-background")}>
-                            <img src={item?.logo} alt="" />
+                            <img
+                                src={item?.logo}
+                                alt=""
+                            />
+                        </div>
+                        <div className={cx("tooltip")}>
+                            <span>{item.title}</span>
                         </div>
                     </li>
                 ))}

@@ -60,7 +60,7 @@ function Contact() {
             <div className={cx("row gx-0", "contact-background")}>
                 <div
                     className={cx(
-                        "col-12 col-xxl-6 col-xl-6 col-lg-6",
+                        "col-12 col-lg-6",
                         "left-content"
                     )}
                 >
@@ -101,7 +101,7 @@ function Contact() {
                 </div>
                 <div
                     className={cx(
-                        "col-12 col-xxl-6 col-xl-6 col-lg-6 d-flex justify-content-center",
+                        "col-12 col-lg-6 d-flex justify-content-center",
                         "right-content"
                     )}
                 >

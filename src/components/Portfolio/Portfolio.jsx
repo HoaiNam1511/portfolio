@@ -1,22 +1,16 @@
 import { useEffect, useState } from "react";
 import styles from "./Portfolio.module.scss";
 import classNames from "classnames/bind";
-import projectImg from "../../asset/image/project.png";
+import projectImg from "../../asset/pj3/img1.png";
 import CloseIcon from "@mui/icons-material/Close";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "aos/dist/aos.css";
-import Aos from "aos";
 import { dataProject } from "../../data/project";
 const cx = classNames.bind(styles);
 function Project() {
     const [popupShow, setPopupShow] = useState(false);
     const [project, setProject] = useState(null);
     const [currentImg, setCurrentImg] = useState();
-
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-    }, []);
 
     const isProjectClick = (item) => {
         setPopupShow(true);
@@ -51,10 +45,7 @@ function Project() {
 
                         {/* Image container */}
                         <div
-                            className={cx(
-                                "col-12 col-xxl-6 col-xl-6 col-lg-6",
-                                "image-container"
-                            )}
+                            className={cx("col-12 col-lg-6", "image-container")}
                         >
                             <div className={cx("image-wrapper")}>
                                 <img
@@ -87,12 +78,7 @@ function Project() {
                         </div>
 
                         {/* Description  */}
-                        <div
-                            className={cx(
-                                "col-12 col-xxl-6 col-xl-6 col-lg-6",
-                                "description"
-                            )}
-                        >
+                        <div className={cx("col-12 col-lg-6", "description")}>
                             <h1>{project.name}</h1>
                             <h3>
                                 <strong>Description</strong>:{" "}
@@ -111,12 +97,13 @@ function Project() {
                             </h3>
                             <h3>
                                 <strong>Source</strong>:{" "}
-                                <a href={project.demo}>{project.source}</a>
+                                <a href={project.source}>{project.source}</a>
                             </h3>
                         </div>
                     </div>
                 )}
             </div>
+
             <h1>Projects</h1>
             <div className={cx("row gx-0", "list")}>
                 {dataProject.map((item, index) => (
@@ -124,12 +111,12 @@ function Project() {
                         key={index}
                         onClick={() => isProjectClick(item)}
                         data-content={item.name}
-                        className={cx(
-                            "col-12 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12",
-                            "item"
-                        )}
+                        className={cx("col-12 col-lg-4 col-md-6", "item")}
                     >
-                        <img src={item.images[0].image} alt="" />
+                        <img
+                            src={item.images[0].image}
+                            alt=""
+                        />
                     </div>
                 ))}
             </div>

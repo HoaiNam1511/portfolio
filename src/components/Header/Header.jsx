@@ -8,7 +8,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import WorkIcon from "@mui/icons-material/Work";
 import PhoneIcon from "@mui/icons-material/Phone";
 import "aos/dist/aos.css";
-import Aos from "aos";
+
 const cx = classNames.bind(styles);
 function Header() {
     const [scrollTop, setScrollTop] = useState(0);
@@ -17,12 +17,6 @@ function Header() {
     const [touchActive, setTouchActive] = useState(false);
 
     const refTouchList = useRef();
-    Aos.init({
-        // offset: 200,
-        duration: 600,
-        easing: "zoom-in",
-        delay: 0,
-    });
 
     const navList = [
         {
@@ -164,10 +158,7 @@ function Header() {
                 )}
             >
                 <p
-                    className={cx(
-                        "col-8 col-xxl-6 col-xl-6 col-lg-6 col-md-10 d-flex",
-                        "logo"
-                    )}
+                    className={cx("col-8 col-lg-6 col-md-10 d-flex", "logo")}
                     onClick={() => window.scrollTo(0, 0)}
                 >{`<Hoai Nam />`}</p>
 
@@ -187,11 +178,9 @@ function Header() {
                 </div>
 
                 <ul
-                    className={cx(
-                        "col-12 col-xxl-6 col-xl-6 col-lg-6 col-md-6",
-                        "nav-list",
-                        { "nav-list_active": menuOpen }
-                    )}
+                    className={cx("col-12 col-md-6", "nav-list", {
+                        "nav-list_active": menuOpen,
+                    })}
                 >
                     {navList.map((item, index) => (
                         <li

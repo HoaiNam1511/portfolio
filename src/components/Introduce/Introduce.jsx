@@ -21,9 +21,6 @@ function Introduce() {
         }, 2200);
     }, []);
 
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-    }, []);
     return (
         <div
             className={cx("d-flex flex-column align-items-center", "introduce")}
@@ -45,7 +42,7 @@ function Introduce() {
                     typing.cursor === 1 ? "active" : ""
                 )}
             >
-                I'm a frontend developers
+                I'm a frontend developer
             </h3>
             <div className={cx("d-flex")}>
                 <a

@@ -1,5 +1,5 @@
-@import '../GlobalComponent/GlobalComponent.scss';
-@import '../../scss/mixin';
+@import "../GlobalComponent/GlobalComponent.scss";
+@import "../../scss/mixin";
 
 #portfolio {
     @include media-breakpoint-lg() {
@@ -16,7 +16,7 @@
 
     .item {
         position: relative;
-        padding:0 5px;
+        padding: 0 5px;
         margin: 15px 0;
         overflow: hidden;
         border-radius: 4px;
@@ -28,11 +28,10 @@
         @include media-breakpoint-sm() {
             margin: 12px 0;
         }
-        // height: 246px;
         &:hover {
-          cursor: pointer;
+            cursor: pointer;
         }
-        
+
         &:before {
             content: "";
             display: flex;
@@ -49,17 +48,17 @@
             bottom: 0;
             right: 5px;
             left: 5px;
-            transition: all .3s ease-in;
+            transition: all 0.3s ease-in;
         }
 
         &:hover::before {
-            opacity: .5;
+            opacity: 0.5;
         }
 
         &::after {
             content: attr(data-content);
             position: absolute;
-            font-size: 3rem;
+            font-size: 2.6rem;
             font-weight: 700;
             text-transform: uppercase;
             color: #ffffff;
@@ -68,8 +67,8 @@
             left: 50%;
             opacity: 0;
             transform: translate(-50%, -50%);
-            transition: all .3s ease;
-            width: 100%;
+            transition: all 0.3s ease;
+            width: 80%;
             text-align: center;
 
             @include media-breakpoint-lg() {
@@ -88,12 +87,11 @@
     }
 
     img {
-        object-fit: cover;
         width: 100%;
         display: inline-block;
-        height: 100%;
-        border-radius: 4px
-    }  
+        border-radius: 4px;
+        object-fit: contain;
+    }
 
     h1 {
         @include font-header;
@@ -101,7 +99,6 @@
             font-size: 6vw;
         }
     }
-
 
     .popup {
         height: 100%;
@@ -112,7 +109,7 @@
         overflow-y: auto;
         position: fixed;
         top: 0;
-        transition: opacity .3s ease;
+        transition: opacity 0.3s ease;
         z-index: 100;
         display: flex;
         justify-content: center;
@@ -121,17 +118,17 @@
     }
 
     .over-lay {
-        position: fixed; 
-        display: block; 
-        width: 100%; 
-        height: 100%; 
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0,0,0,0.5); 
+        background-color: rgba(0, 0, 0, 0.5);
         z-index: 2;
-        cursor: pointer; 
+        cursor: pointer;
     }
 
     .popup-content {
@@ -139,7 +136,7 @@
         max-width: 1200px;
         width: 100%;
         background-color: #252525;
-        padding: 50px 70px 50px 30px;
+        padding: 30px 30px 30px 30px;
         border-radius: 10px;
 
         @include media-breakpoint-lg() {
@@ -147,19 +144,16 @@
             height: 70vh;
             overflow-y: auto;
             scrollbar-width: none;
-         
         }
-        
 
         .image-container {
             .image-wrapper {
                 width: 100%;
-            }
-
-            .main-image {
-                //width: 600px;
-                width: 100%;
-                height: 100%;
+                .main-image {
+                    //width: 600px;
+                    width: 100%;
+                    height: 100%;
+                }
             }
 
             .swiper-list {
@@ -183,11 +177,11 @@
                 margin: 30px 0px 0px;
             }
             h1 {
-                color: #fff; 
+                color: #fff;
                 text-align: left;
-                font-size: 3rem;
+                font-size: 2.6rem;
                 margin-bottom: 20px;
-                
+
                 @include media-breakpoint-md() {
                     font-size: 5vw;
                 }
@@ -197,13 +191,12 @@
                 font-weight: 300;
                 color: #fff;
                 line-height: 3.6rem;
-
+                font-size: 1.7rem;
                 a {
                     color: #fff;
                     text-decoration: none;
                 }
             }
-
         }
     }
 
@@ -212,7 +205,7 @@
         top: 0;
         right: 0;
         border: none;
-        font-size: 3rem;
+        font-size: 2.6rem;
         width: 50px;
         height: 50px;
         margin-right: 5px;
@@ -220,11 +213,10 @@
         color: #fff;
 
         .btn-icon {
-            font-size: 4rem;
+            font-size: 2.6rem;
         }
 
         @include media-breakpoint-lg() {
-           
         }
 
         @include media-breakpoint-md() {
@@ -243,7 +235,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         height: 35px;
         min-width: 100px;
         border: none;
