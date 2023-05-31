@@ -46,7 +46,7 @@ export const dataProject = [
         description:
             "This project is an E-commerce website selling shoes, the feature of project as: filter product, search, add to card and wishlist, responsive",
         technology: "ReactJs, Redux, ExpressJs (Sequelize), MySql",
-        createAt: "January 11, 2023 - February 20, 2023",
+        createAt: "January 11, 2023 - February 28, 2023",
         demo: "https://ananas-shoes-shop.vercel.app",
         source: "https://github.com/HoaiNam1511/shoe-shop-frontend",
         member: 1,
@@ -81,7 +81,7 @@ export const dataProject = [
     {
         name: "Pizza Restaurant",
         description:
-            "This project is for pizza restaurants, this project has key features such as: booking, order, send mail, filter product, search, add to card, fully responsive",
+            "This project is for pizza restaurants, project has key features such as: booking, order, send mail, filter product, search, add to card, fully responsive",
         technology: "ReactJs, Redux, ExpressJs (Sequelize), MySql",
         createAt: "April 11, 2023 - May 18, 2023",
         demo: "https://pizza-restaurant-fe.vercel.app",
@@ -124,7 +124,7 @@ export const dataProject = [
     {
         name: "Pizza Restaurant Admin",
         description:
-            "This project use for product management, this project has key features such as: CRUD (product, category, order, account), login, reset password, sort, filter",
+            "This project use for product management, project has key features such as: CRUD (product, category, order, account), login, reset password, sort, filter",
         technology:
             "ReactJs, Redux, ExpressJs (Sequelize), MySql, JWT, RESTful APIs",
         createAt: "April 21, 2023 - May 25, 2023",
@@ -168,7 +168,7 @@ export const dataProject = [
     {
         name: "Shoes Shop Admin",
         description:
-            "This project use for product management, this project has key features such as: CRUD (product, category, user), sort, upload image, login, auth",
+            "This project use for product management, project has key features such as: CRUD (product, category, user), sort, upload image, login, auth",
         technology:
             "ReactJs, Redux, ExpressJs (Sequelize), MySql, JWT, RESTful APIs",
         createAt: "November 5, 2022 - January 8, 2023",
@@ -194,12 +194,11 @@ export const dataProject = [
     {
         name: "My kitchen",
         description:
-            "This project is cooking guide app, this project has key features such as: login, ",
-        technology:
-            "ReactJs, Redux, ExpressJs (Sequelize), MySql, JWT, RESTful APIs",
-        createAt: "November 5, 2022 - January 8, 2023",
-        demo: "https://shoes-shop-admin-ten.vercel.app/login",
-        source: "https://github.com/HoaiNam1511/shoes-shop",
+            "This project is cooking guide app, project has key features such as: register, login, add wish-list, search",
+        technology: "React Native, Php, MySql",
+        createAt: "September 21, 2021 - November 16, 2021",
+        demo: "https://github.com/HoaiNam1511/MyKitchen",
+        source: "https://github.com/HoaiNam1511/MyKitchen",
         member: 1,
         images: [
             {

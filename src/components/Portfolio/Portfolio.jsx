@@ -1,17 +1,16 @@
 import { useEffect, useState } from "react";
 import styles from "./Portfolio.module.scss";
 import classNames from "classnames/bind";
-import projectImg from "../../asset/pj3/img1.png";
 import CloseIcon from "@mui/icons-material/Close";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import "swiper/swiper.min.css";
 import { dataProject } from "../../data/project";
+
 const cx = classNames.bind(styles);
 function Project() {
     const [popupShow, setPopupShow] = useState(false);
     const [project, setProject] = useState(null);
     const [currentImg, setCurrentImg] = useState();
-
     const isProjectClick = (item) => {
         setPopupShow(true);
         setProject(item);
@@ -31,7 +30,7 @@ function Project() {
             id="portfolio"
             className={cx("container-fluid gx-0 ", "portfolio")}
         >
-            <h1>Projects</h1>
+            <h1 className={cx("header-title")}>Projects</h1>
             <div className={cx("row gx-0", "list")}>
                 {dataProject.map((item, index) => (
                     <div
@@ -96,26 +95,29 @@ function Project() {
 
                         {/* Description  */}
                         <div className={cx("col-12 col-lg-6", "description")}>
-                            <h2>{project.name}</h2>
+                            <h1>{project.name}</h1>
                             <h3>
-                                <strong>Description</strong>:
+                                <strong>Description</strong>:&nbsp;
                                 {project.description}
                             </h3>
                             <h3>
-                                <strong>Created</strong>: {project.createAt}
+                                <strong>Created</strong>: &nbsp;
+                                {project.createAt}
                             </h3>
                             <h3>
-                                <strong>Members</strong>: {project.member}
+                                <strong>Members</strong>: &nbsp;
+                                {project.member}
                             </h3>
                             <h3>
-                                <strong>Technology</strong>:{project.technology}
+                                <strong>Technology</strong>: &nbsp;
+                                {project.technology}
                             </h3>
                             <h3>
-                                <strong>Demo</strong>:
+                                <strong>Demo</strong>:&nbsp;
                                 <a href={project.demo}>{project.demo}</a>
                             </h3>
                             <h3>
-                                <strong>Source</strong>:
+                                <strong>Source</strong>:&nbsp;
                                 <a href={project.source}>{project.source}</a>
                             </h3>
                         </div>

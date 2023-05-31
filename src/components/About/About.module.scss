@@ -36,9 +36,14 @@ $qualification-line: 2px;
         //width: 100%;
         border-radius: 10px;
         margin-right: 80px;
-        @include media-breakpoint-md() {
-            width: 100%;
-            margin-right: 0px;
+
+        @include media-breakpoint-sm() {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
         }
     }
 
@@ -59,7 +64,8 @@ $qualification-line: 2px;
         }
 
         @include media-breakpoint-sm() {
-            font-size: 3.4vw;
+            font-size: 1.5rem;
+            padding: 15px 0px;
         }
     }
 
@@ -88,14 +94,17 @@ $qualification-line: 2px;
 
         @include media-breakpoint-md() {
             height: 38px;
-            padding: 0 10px;
-            font-size: 3vw;
+            padding: 0 25px;
             margin-top: 10px;
         }
 
         @include media-breakpoint-sm() {
             height: 30px;
-            padding: 0 5px;
+            padding: 0 15px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.6rem;
         }
     }
 

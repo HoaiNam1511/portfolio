@@ -169,6 +169,11 @@ function Contact() {
                         <button
                             type="button"
                             className={cx("btn btn-primary", "btn-submit")}
+                            onClick={() =>
+                                alert(
+                                    "The feature is currently under development"
+                                )
+                            }
                         >
                             Submit
                         </button>

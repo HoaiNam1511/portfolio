@@ -3,7 +3,7 @@
 
 .portfolio {
     max-width: 1200px;
-    @include media-breakpoint-lg() {
+    @include media-breakpoint-xl() {
         padding: 0 10px !important;
     }
 
@@ -16,7 +16,7 @@
         padding: 0 5px;
         margin: 15px 0;
         overflow: hidden;
-        border-radius: 4px;
+        // border-radius: 4px;
 
         @include media-breakpoint-lg() {
             margin: 15px 0;
@@ -45,6 +45,7 @@
             bottom: 0;
             right: 5px;
             left: 5px;
+            border-radius: 4px;
             transition: all 0.3s ease-in;
         }
 
@@ -90,14 +91,11 @@
         object-fit: contain;
     }
 
-    h2 {
+    .header-title {
         @include font-header;
         @include media-breakpoint-sm() {
             font-size: 6vw;
         }
-        padding: 0;
-        color: #fff;
-        font-size: 2.6rem;
     }
 
     .popup {
@@ -170,6 +168,7 @@
                 }
             }
         }
+
         .description {
             padding-left: 15px;
             @include media-breakpoint-lg() {
@@ -177,6 +176,7 @@
                 margin: 30px 0px 0px;
             }
             h1 {
+                text-transform: capitalize;
                 color: #fff;
                 text-align: left;
                 font-size: 2.6rem;
@@ -195,6 +195,10 @@
                 a {
                     color: #fff;
                     text-decoration: none;
+                }
+
+                @include media-breakpoint-sm() {
+                    font-size: 1.4rem;
                 }
             }
         }
