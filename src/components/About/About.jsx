@@ -1,7 +1,7 @@
 import styles from "./About.module.scss";
 import classNames from "classnames/bind";
 import avatar from "../../asset/image/avt1.png";
-import cv from "../../asset/file/CV-ChuHoaiNam-Intern.pdf";
+import cv from "../../asset/file/ChuHoaiNam-Fresher.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import "aos/dist/aos.css";
 import Aos from "aos";
@@ -54,13 +54,15 @@ function About() {
                     />
                 </div>
                 <div className={cx("col-12 col-sm-7", "about-content")}>
-                    My name is Nam, i am eager to become a professional
-                    front-end developer. I have knowledge HTML, CSS, Javascript,
-                    Typescript, ReactJs, Responsive and i can working backend
-                    with NodeJs (ExpressJs, Sequelize). I always proactive and
-                    independent in work but willing to be supportive,
-                    open-minded in teamwork and learn more about new
-                    technologies and improve my programming skills.
+                    My name is Nam, and I am eager to become a professional
+                    front-end developer. I have knowledge of HTML, CSS,
+                    JavaScript, TypeScript, ReactJs, and responsive design.
+                    Additionally, I am proficient in backend development using
+                    NodeJs with ExpressJs and Sequelize. I am proactive and
+                    independent in my work, but I am also willing to be
+                    supportive and open-minded in teamwork. I am constantly
+                    seeking opportunities to learn more about new technologies
+                    and improve my programming skills.
                     <a
                         href={cv}
                         download

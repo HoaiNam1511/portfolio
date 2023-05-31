@@ -81,7 +81,7 @@ export const dataProject = [
     {
         name: "Pizza Restaurant",
         description:
-            "This project is for pizza restaurants, project has key features such as: booking, order, send mail, filter product, search, add to card, fully responsive",
+            "This project is website of a pizza restaurants, project has key features such as: booking, order, send mail, filter product, search, add to card, fully responsive",
         technology: "ReactJs, Redux, ExpressJs (Sequelize), MySql",
         createAt: "April 11, 2023 - May 18, 2023",
         demo: "https://pizza-restaurant-fe.vercel.app",
