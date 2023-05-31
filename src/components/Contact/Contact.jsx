@@ -53,17 +53,12 @@ function Contact() {
 
     return (
         <div
-            id={cx("contact")}
+            id="contact"
             className={cx("container-fluid gx-0", "contact")}
         >
             <h1 className={cx("header-title")}>Contact</h1>
             <div className={cx("row gx-0", "contact-background")}>
-                <div
-                    className={cx(
-                        "col-12 col-lg-6",
-                        "left-content"
-                    )}
-                >
+                <div className={cx("col-12 col-lg-6", "left-content")}>
                     <h1 className={cx("info-header")}>Get in touch</h1>
                     <h3 className={cx("info-title")}>
                         I am always open to discussing new projects, creative
@@ -107,7 +102,10 @@ function Contact() {
                 >
                     <form className={cx("form")}>
                         <div className={cx("contact-form")}>
-                            <label className={cx("input-label")} htmlFor="">
+                            <label
+                                className={cx("input-label")}
+                                htmlFor=""
+                            >
                                 Your Name
                             </label>
                             <div className={cx("d-flex", "input")}>
@@ -119,11 +117,17 @@ function Contact() {
                                 >
                                     <PersonIcon className={cx("input-icon")} />
                                 </div>
-                                <input type="text" placeholder="Name" />
+                                <input
+                                    type="text"
+                                    placeholder="Name"
+                                />
                             </div>
                         </div>
                         <div className={cx("contact-form")}>
-                            <label className={cx("input-label")} htmlFor="">
+                            <label
+                                className={cx("input-label")}
+                                htmlFor=""
+                            >
                                 Email
                             </label>
                             <div className={cx("d-flex", "input")}>
@@ -135,11 +139,17 @@ function Contact() {
                                 >
                                     <MailIcon className={cx("input-icon")} />
                                 </div>
-                                <input type="text" placeholder="Email" />
+                                <input
+                                    type="text"
+                                    placeholder="Email"
+                                />
                             </div>
                         </div>
                         <div className={cx("contact-form")}>
-                            <label className={cx("input-label")} htmlFor="">
+                            <label
+                                className={cx("input-label")}
+                                htmlFor=""
+                            >
                                 Message
                             </label>
 

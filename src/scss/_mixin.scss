@@ -1,33 +1,31 @@
-@mixin media-breakpoint-xxl() { 
+@mixin media-breakpoint-xxl() {
     @media only screen and (max-width: 1399.98px) {
         @content;
     }
- }
+}
 
- @mixin media-breakpoint-xl() { 
+@mixin media-breakpoint-xl() {
     @media only screen and (max-width: 1199.98px) {
         @content;
     }
 }
 
-@mixin media-breakpoint-lg() { 
+@mixin media-breakpoint-lg() {
     @media only screen and (max-width: 991.98px) {
         @content;
     }
- }
+}
 
-
- @mixin media-breakpoint-md() { 
+@mixin media-breakpoint-md() {
     @media only screen and (max-width: 767.98px) {
         @content;
     }
 }
 
-
-@mixin media-breakpoint-sm() { 
-    @media only screen and (max-width: 576px) { 
+@mixin media-breakpoint-sm() {
+    @media only screen and (max-width: 576px) {
         @content;
-     }
+    }
 }
 
 @mixin font-header {
@@ -35,5 +33,5 @@
     font-weight: 700;
     font-size: 3.2rem;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    padding: 80px 0px 40px 0px;
 }

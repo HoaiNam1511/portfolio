@@ -40,7 +40,7 @@ function About() {
 
     return (
         <div
-            id={cx("about")}
+            id="about"
             className={cx("container-fluid gx-0", "about")}
         >
             <h1>About</h1>

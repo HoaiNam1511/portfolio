@@ -23,6 +23,7 @@ function Introduce() {
 
     return (
         <div
+            id="introduce"
             className={cx("d-flex flex-column align-items-center", "introduce")}
         >
             <h1>HELLO</h1>
@@ -42,7 +43,7 @@ function Introduce() {
                     typing.cursor === 1 ? "active" : ""
                 )}
             >
-                I'm a frontend developer
+                I'm a front-end developer
             </h3>
             <div className={cx("d-flex")}>
                 <a

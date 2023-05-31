@@ -1,22 +1,17 @@
-@import '../GlobalComponent/GlobalComponent.scss';
-@import '../../scss/mixin';
+@import "../GlobalComponent/GlobalComponent.scss";
+@import "../../scss/mixin";
 
 $qualification-width: 355px;
 $qualification-width-heigh: 83px;
 $qualification-line: 2px;
 
-
-#about {
-    @include media-breakpoint-lg() {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
 .about {
     max-width: 1200px;
-    margin-bottom: 130px;
-
+    margin-bottom: 80px;
+    @include media-breakpoint-lg() {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
     h1 {
         @include font-header;
         @include media-breakpoint-sm() {
@@ -33,9 +28,9 @@ $qualification-line: 2px;
         text-align: center;
         margin-top: 30px;
     }
-    
+
     .about-image {
-        object-fit:  cover;
+        object-fit: cover;
         width: 200px;
         //width: 100%;
         border-radius: 10px;
@@ -45,11 +40,11 @@ $qualification-line: 2px;
             margin-right: 0px;
         }
     }
-    
+
     .about-title {
         position: relative;
     }
-    
+
     .about-content {
         font-size: 1.8rem;
         font-weight: 300;
@@ -66,7 +61,7 @@ $qualification-line: 2px;
             font-size: 3.4vw;
         }
     }
-    
+
     .btn-download {
         border: none;
         height: 45px;
@@ -74,14 +69,18 @@ $qualification-line: 2px;
         border-radius: 4px;
         text-transform: uppercase;
         font-weight: 500;
-        background-image: -webkit-linear-gradient(0deg ,#8490ff 0%,#62bdfc 100%);
-        transition: background-color .2s;
+        background-image: -webkit-linear-gradient(
+            0deg,
+            #8490ff 0%,
+            #62bdfc 100%
+        );
+        transition: background-color 0.2s;
         color: #fff;
-       
+
         .icon {
             margin-left: 5px;
         }
-    
+
         &:hover {
             background-color: #e6e6e6;
         }
@@ -108,7 +107,6 @@ $qualification-line: 2px;
     }
 
     .qualification-item {
-        
     }
 
     .title {
@@ -117,13 +115,13 @@ $qualification-line: 2px;
         align-items: center;
         margin-bottom: 5px;
         font-size: 1.6rem;
-     
+
         @include media-breakpoint-sm() {
             font-size: 1.4rem;
         }
 
-        &:nth-child(2), &:nth-child(3) {
-            
+        &:nth-child(2),
+        &:nth-child(3) {
             line-height: 1.6;
             font-size: 1.5rem;
             font-weight: 400;
@@ -151,10 +149,12 @@ $qualification-line: 2px;
     }
 
     .qualification-data {
-        width: calc((#{$qualification-width} / 2 - (#{$qualification-line} / 2)));
+        width: calc(
+            (#{$qualification-width} / 2 - (#{$qualification-line} / 2))
+        );
         z-index: 100;
     }
-    
+
     .qualification-line {
         position: relative;
         width: 2px;
@@ -173,8 +173,6 @@ $qualification-line: 2px;
 
         @include media-breakpoint-sm() {
             margin: 0px 25px;
-        } 
+        }
     }
 }
-
-

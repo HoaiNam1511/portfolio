@@ -1,14 +1,11 @@
 @import "../GlobalComponent/GlobalComponent.scss";
 @import "../../scss/mixin";
 
-#portfolio {
-    @include media-breakpoint-lg() {
-        padding: 0 10px;
-    }
-}
-
 .portfolio {
     max-width: 1200px;
+    @include media-breakpoint-lg() {
+        padding: 0 10px !important;
+    }
 
     .list {
         margin: 0 -5px;

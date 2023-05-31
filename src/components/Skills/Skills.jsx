@@ -1,15 +1,14 @@
 import styles from "./Skills.module.scss";
 import classNames from "classnames/bind";
 import { listLogo } from "../../data/logo.jsx";
-import { useEffect } from "react";
 import "aos/dist/aos.css";
-import Aos from "aos";
 
 const cx = classNames.bind(styles);
 
 function Skills() {
     return (
         <div
+            id="skill"
             className={cx(
                 "container-fluid gx-0 d-flex flex-column align-items-center",
                 "skill"

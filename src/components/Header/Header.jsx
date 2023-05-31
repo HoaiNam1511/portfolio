@@ -23,42 +23,35 @@ function Header() {
             title: "Home",
             icon: HomeIcon,
             offset: 0,
+            id: "introduce",
         },
         {
             title: "About",
             icon: PersonIcon,
             offset: 550,
+            id: "about",
         },
         {
             title: "Skills",
             icon: EditIcon,
             offset: 1400,
+            id: "skill",
         },
         {
             title: "Portfolio",
             icon: WorkIcon,
             offset: 1890,
+            id: "portfolio",
         },
         {
             title: "Contact",
             icon: PhoneIcon,
             offset: 2500,
+            id: "contact",
         },
     ];
 
     const [currentPosition, setCurrentPosition] = useState(navList[0]);
-
-    useEffect(() => {
-        const handleScroll = (event) => {
-            setScrollTop(window.scrollY);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
 
     useEffect(() => {
         if (menuOpen) {
@@ -81,24 +74,13 @@ function Header() {
         };
     }, [touchOpen]);
 
-    useEffect(() => {
-        function handleClickOutside(event) {
-            if (
-                refTouchList.current &&
-                !refTouchList.current.contains(event.target)
-            ) {
-                setTouchOpen(false);
-            }
-        }
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, [refTouchList]);
-
     const handleNavClick = (item) => {
-        window.scrollTo(0, item.offset);
-        setCurrentPosition(item);
+        const element = document.getElementById(item.id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+            });
+        }
         setTouchOpen(false);
         setTouchActive(false);
         setMenuOpen(false);
@@ -110,8 +92,6 @@ function Header() {
                 "active-shadows": scrollTop > 0,
             })}
         >
-            {/* Touch */}
-            {/* <div className={cx({ "over-lay": menuOpen })}></div> */}
             <div
                 className={cx("d-block d-lg-none", "touch", "touch-main", {
                     "touch-active": touchActive,

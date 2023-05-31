@@ -28,9 +28,26 @@ function Project() {
 
     return (
         <div
-            id={cx("portfolio")}
+            id="portfolio"
             className={cx("container-fluid gx-0 ", "portfolio")}
         >
+            <h1>Projects</h1>
+            <div className={cx("row gx-0", "list")}>
+                {dataProject.map((item, index) => (
+                    <div
+                        key={index}
+                        onClick={() => isProjectClick(item)}
+                        data-content={item.name}
+                        className={cx("col-12 col-lg-4 col-md-6", "item")}
+                    >
+                        <img
+                            src={item.images[0].image}
+                            alt=""
+                        />
+                    </div>
+                ))}
+            </div>
+
             <div className={cx({ "over-lay": popupShow })}></div>
             <div className={cx("popup", { active: popupShow })}>
                 {project && (
@@ -102,23 +119,6 @@ function Project() {
                         </div>
                     </div>
                 )}
-            </div>
-
-            <h1>Projects</h1>
-            <div className={cx("row gx-0", "list")}>
-                {dataProject.map((item, index) => (
-                    <div
-                        key={index}
-                        onClick={() => isProjectClick(item)}
-                        data-content={item.name}
-                        className={cx("col-12 col-lg-4 col-md-6", "item")}
-                    >
-                        <img
-                            src={item.images[0].image}
-                            alt=""
-                        />
-                    </div>
-                ))}
             </div>
         </div>
     );
