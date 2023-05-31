@@ -80,7 +80,7 @@ function Project() {
                                 }
                             >
                                 {project.images.map((item, index) => (
-                                    <SwiperSlide>
+                                    <SwiperSlide key={index}>
                                         <img
                                             className={cx("image-slide")}
                                             src={item.image}

@@ -48,7 +48,7 @@ export const dataProject = [
         technology: "ReactJs, Redux, ExpressJs (Sequelize), MySql",
         createAt: "January 11, 2023 - February 20, 2023",
         demo: "https://ananas-shoes-shop.vercel.app",
-        source: "https://github.com/HoaiNam1511/ananas-shoes-shop",
+        source: "https://github.com/HoaiNam1511/shoe-shop-frontend",
         images: [
             {
                 image: pj2_1,

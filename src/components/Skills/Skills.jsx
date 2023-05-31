@@ -20,7 +20,10 @@ function Skills() {
                 className={cx("row gx-0 f-flex justify-content-center", "list")}
             >
                 {listLogo.map((item, index) => (
-                    <li className={cx("col-4 col-lg-2 col-sm-3", "item")}>
+                    <li
+                        className={cx("col-4 col-lg-2 col-sm-3", "item")}
+                        key={index}
+                    >
                         <div className={cx("item-background")}>
                             <img
                                 src={item?.logo}

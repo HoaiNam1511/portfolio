@@ -66,7 +66,10 @@ function Contact() {
                     </h3>
                     <div className={cx("info-container")}>
                         {infoData.map((item, index) => (
-                            <div className={cx("d-flex align-items-center")}>
+                            <div
+                                className={cx("d-flex align-items-center")}
+                                key={index}
+                            >
                                 <item.icon className={cx("icon")} />
                                 <div className={cx("info-item")}>
                                     <h5 className={cx("title-1")}>
@@ -86,7 +89,10 @@ function Contact() {
                         )}
                     >
                         {networkData.map((item, index) => (
-                            <div className={cx("network-item")}>
+                            <div
+                                className={cx("network-item")}
+                                key={index}
+                            >
                                 <a href={item.url}>
                                     <item.icon className={cx("network-icon")} />
                                 </a>

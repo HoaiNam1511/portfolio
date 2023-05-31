@@ -78,6 +78,7 @@ function About() {
                 {listQualification.map((item, index) =>
                     index % 2 === 0 ? (
                         <div
+                            key={index}
                             className={cx("d-flex", "qualification-item")}
                             data-aos="fade-up-right"
                         >
@@ -100,6 +101,7 @@ function About() {
                         </div>
                     ) : (
                         <div
+                            key={index}
                             className={cx("d-flex", "qualification-item")}
                             data-aos="fade-up-left"
                         >

@@ -51,6 +51,7 @@ function Header() {
         },
     ];
 
+    const [currentElement, setCurrentElement] = useState(0);
     const [currentPosition, setCurrentPosition] = useState(navList[0]);
 
     useEffect(() => {
@@ -74,13 +75,14 @@ function Header() {
         };
     }, [touchOpen]);
 
-    const handleNavClick = (item) => {
+    const handleNavClick = (item, index) => {
         const element = document.getElementById(item.id);
         if (element) {
             element.scrollIntoView({
                 behavior: "smooth",
             });
         }
+        setCurrentElement(index);
         setTouchOpen(false);
         setTouchActive(false);
         setMenuOpen(false);
@@ -117,7 +119,7 @@ function Header() {
                             data-aos={touchOpen ? "fade-right" : ""}
                             key={index}
                             className={cx("touch")}
-                            onClick={() => handleNavClick(item)}
+                            onClick={() => handleNavClick(item, index)}
                         >
                             <item.icon
                                 className={cx(
@@ -164,11 +166,12 @@ function Header() {
                 >
                     {navList.map((item, index) => (
                         <li
-                            onClick={() => handleNavClick(item)}
+                            onClick={() => handleNavClick(item, index)}
                             key={index}
                             className={cx(
                                 "d-flex align-items-center",
-                                "nav-item"
+                                "nav-item",
+                                { active: currentElement === index }
                             )}
                         >
                             <item.icon
