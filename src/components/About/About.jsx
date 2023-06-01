@@ -1,6 +1,6 @@
 import styles from "./About.module.scss";
 import classNames from "classnames/bind";
-import avatar from "../../asset/image/avt1.png";
+import avatar from "../../asset/image/avt1.jpg";
 import cv from "../../asset/file/ChuHoaiNam-Fresher.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import "aos/dist/aos.css";
