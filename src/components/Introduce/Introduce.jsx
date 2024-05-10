@@ -1,12 +1,12 @@
-import styles from "./Introduce.module.scss";
-import classNames from "classnames/bind";
-
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import classNames from "classnames/bind";
 import { useEffect, useState } from "react";
+
 import "aos/dist/aos.css";
-import Aos from "aos";
+import styles from "./Introduce.module.scss";
+
 const cx = classNames.bind(styles);
 
 function Introduce() {

@@ -1,16 +1,17 @@
-import classNames from "classnames/bind";
-import styles from "./Contact.module.scss";
-import PlaceIcon from "@mui/icons-material/Place";
-import MailIcon from "@mui/icons-material/Mail";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
-import { useEffect } from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import MailIcon from "@mui/icons-material/Mail";
 import PersonIcon from "@mui/icons-material/Person";
+import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import PlaceIcon from "@mui/icons-material/Place";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import classNames from "classnames/bind";
+import { useEffect } from "react";
 
-import "aos/dist/aos.css";
+import styles from "./Contact.module.scss";
+
 import Aos from "aos";
+import "aos/dist/aos.css";
 
 const cx = classNames.bind(styles);
 function Contact() {

@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
-import styles from "./Portfolio.module.scss";
-import classNames from "classnames/bind";
 import CloseIcon from "@mui/icons-material/Close";
+import classNames from "classnames/bind";
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
+
 import { dataProject } from "../../data/project";
+import styles from "./Portfolio.module.scss";
 
 const cx = classNames.bind(styles);
 function Project() {
