@@ -1,14 +1,15 @@
-import styles from "./About.module.scss";
-import classNames from "classnames/bind";
-import avatar from "../../asset/image/avt1.jpg";
-import cv from "../../asset/file/ChuHoaiNam-Fresher.pdf";
-import DownloadIcon from "@mui/icons-material/Download";
-import "aos/dist/aos.css";
-import Aos from "aos";
-import { useEffect } from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import DownloadIcon from "@mui/icons-material/Download";
 import ImportContactsIcon from "@mui/icons-material/ImportContacts";
 import SchoolIcon from "@mui/icons-material/School";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import classNames from "classnames/bind";
+import { useEffect } from "react";
+
+import cv from "../../asset/file/ChuHoaiNam-Fresher.pdf";
+import avatar from "../../asset/image/avt1.jpg";
+import styles from "./About.module.scss";
 
 const cx = classNames.bind(styles);
 
@@ -27,13 +28,13 @@ function About() {
         {
             title1: "Major",
             title2: "Computer Science",
-            title3: "GPA: 3.05",
+            title3: "GPA: 3.11",
             icon: ImportContactsIcon,
         },
         {
             title1: "Award",
             title2: "Scholarship",
-            title3: "3 times",
+            title3: "4 times",
             icon: SchoolIcon,
         },
     ];
@@ -53,16 +54,21 @@ function About() {
                         alt=""
                     />
                 </div>
+
                 <div className={cx("col-12 col-sm-7", "about-content")}>
-                    My name is Nam, and I am eager to become a professional
-                    front-end developer. I have knowledge of HTML, CSS,
-                    JavaScript, TypeScript, ReactJs, and responsive design.
-                    Additionally, I am proficient in backend development using
-                    NodeJs with ExpressJs and Sequelize. I am proactive and
-                    independent in my work, but I am also willing to be
-                    supportive and open-minded in teamwork. I am constantly
-                    seeking opportunities to learn more about new technologies
-                    and improve my programming skills.
+                    <div className={cx("content")}>
+                        My name is Nam, I am a frontend developer with over 1
+                        years of experience in the eld of web development,
+                        specializing in
+                        <strong> ReactJS</strong> and <strong>NextJs</strong>.
+                        Additionally, I have a background in backend programming
+                        using <strong>NodeJs</strong> with
+                        <strong> ExpressJs</strong> (Sequelize). I am proactive
+                        and independent in my work, but I am also willing to be
+                        supportive and open-minded in teamwork. I am constantly
+                        seeking opportunities to learn more about new
+                        technologies and improve my programming skills.
+                    </div>
                     <a
                         href={cv}
                         download

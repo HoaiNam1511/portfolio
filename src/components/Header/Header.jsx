@@ -1,13 +1,13 @@
-import styles from "./Header.module.scss";
-import classNames from "classnames/bind";
-import { useEffect, useRef } from "react";
-import { useState } from "react";
+import EditIcon from "@mui/icons-material/Edit";
 import HomeIcon from "@mui/icons-material/Home";
 import PersonIcon from "@mui/icons-material/Person";
-import EditIcon from "@mui/icons-material/Edit";
-import WorkIcon from "@mui/icons-material/Work";
 import PhoneIcon from "@mui/icons-material/Phone";
+import WorkIcon from "@mui/icons-material/Work";
 import "aos/dist/aos.css";
+import classNames from "classnames/bind";
+import { useEffect, useRef, useState } from "react";
+
+import styles from "./Header.module.scss";
 
 const cx = classNames.bind(styles);
 function Header() {
