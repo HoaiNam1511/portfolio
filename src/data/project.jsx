@@ -40,14 +40,49 @@ import pj5_3 from "../asset/pj3/img3.png";
 import pj5_4 from "../asset/pj3/img4.png";
 import pj5_5 from "../asset/pj3/img5.png";
 
+import pj6_1 from "../asset/pj4/img1.png";
+import pj6_2 from "../asset/pj4/img2.png";
+import pj6_3 from "../asset/pj4/img3.png";
+import pj6_4 from "../asset/pj4/img4.png";
+import pj6_5 from "../asset/pj4/img5.png";
+import pj6_6 from "../asset/pj4/img6.png";
+
 export const dataProject = [
+    {
+        name: "Mainichi Nihongo",
+        description:
+            "This is a website serving Japanese language learning for businesses in Vietnam, Cambodia and Myanmar",
+        technologies: "NextJS, Strapi, PostgreSQL...",
+        createAt: "June 2023 - October 2023",
+        link: "https://www.mainichi-nihongo.net",
+        images: [
+            {
+                image: pj6_1,
+            },
+            {
+                image: pj6_2,
+            },
+            {
+                image: pj6_3,
+            },
+            {
+                image: pj6_4,
+            },
+            {
+                image: pj6_5,
+            },
+            {
+                image: pj6_6,
+            },
+        ],
+    },
     {
         name: "Shoes Shop",
         description:
             "This project is an E-commerce website selling shoes, the feature of project as: filter product, search, add to card and wishlist, responsive",
-        technology: "ReactJs, Redux, ExpressJs (Sequelize), MySql",
+        technologies: "ReactJs, Redux, ExpressJs (Sequelize), MySql",
         createAt: "January 11, 2023 - February 28, 2023",
-        demo: "https://ananas-shoes-shop.vercel.app",
+        link: "https://ananas-shoes-shop.vercel.app",
         source: "https://github.com/HoaiNam1511/shoe-shop-frontend",
         member: 1,
         images: [
@@ -82,9 +117,9 @@ export const dataProject = [
         name: "Pizza Restaurant",
         description:
             "This project is website of a pizza restaurants, project has key features such as: booking, order, send mail, filter product, search, add to card, fully responsive",
-        technology: "ReactJs, Redux, ExpressJs (Sequelize), MySql",
+        technologies: "ReactJs, Redux, ExpressJs (Sequelize), MySql",
         createAt: "April 11, 2023 - May 18, 2023",
-        demo: "https://pizza-restaurant-fe.vercel.app",
+        link: "https://pizza-restaurant-fe.vercel.app",
         source: "https://github.com/HoaiNam1511/pizza-restaurant-frontend",
         member: 1,
         images: [
@@ -125,10 +160,10 @@ export const dataProject = [
         name: "Pizza Restaurant Admin",
         description:
             "This project use for product management, project has key features such as: CRUD (product, category, order, account), login, reset password, sort, filter",
-        technology:
+        technologies:
             "ReactJs, Redux, ExpressJs (Sequelize), MySql, JWT, RESTful APIs",
         createAt: "April 21, 2023 - May 25, 2023",
-        demo: "https://pizza-restaurant-beta.vercel.app",
+        link: "https://pizza-restaurant-beta.vercel.app",
         source: "https://github.com/HoaiNam1511/pizza-restaurant",
         member: 1,
         images: [
@@ -169,10 +204,10 @@ export const dataProject = [
         name: "Shoes Shop Admin",
         description:
             "This project use for product management, project has key features such as: CRUD (product, category, user), sort, upload image, login, auth",
-        technology:
+        technologies:
             "ReactJs, Redux, ExpressJs (Sequelize), MySql, JWT, RESTful APIs",
         createAt: "November 5, 2022 - January 8, 2023",
-        demo: "https://shoes-shop-admin-ten.vercel.app/login",
+        link: "https://shoes-shop-admin-ten.vercel.app/login",
         source: "https://github.com/HoaiNam1511/shoes-shop",
         member: 1,
         images: [
@@ -190,14 +225,13 @@ export const dataProject = [
             },
         ],
     },
-
     {
         name: "My kitchen",
         description:
             "This project is cooking guide app, project has key features such as: register, login, add wish-list, search",
-        technology: "React Native, Php, MySql",
+        technologies: "React Native, Php, MySql",
         createAt: "September 21, 2021 - November 16, 2021",
-        demo: "https://github.com/HoaiNam1511/MyKitchen",
+        link: "https://github.com/HoaiNam1511/MyKitchen",
         source: "https://github.com/HoaiNam1511/MyKitchen",
         member: 1,
         images: [
