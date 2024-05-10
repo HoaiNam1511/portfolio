@@ -105,22 +105,28 @@ function Project() {
                                 <strong>Created</strong>: &nbsp;
                                 {project.createAt}
                             </h3>
-                            <h3>
-                                <strong>Members</strong>: &nbsp;
-                                {project.member}
-                            </h3>
+                            {project.member && (
+                                <h3>
+                                    <strong>Members</strong>: &nbsp;
+                                    {project.member}
+                                </h3>
+                            )}
                             <h3>
                                 <strong>Technology</strong>: &nbsp;
-                                {project.technology}
+                                {project.technologies}
                             </h3>
                             <h3>
                                 <strong>Demo</strong>:&nbsp;
-                                <a href={project.demo}>{project.demo}</a>
+                                <a href={project.link}>{project.link}</a>
                             </h3>
-                            <h3>
-                                <strong>Source</strong>:&nbsp;
-                                <a href={project.source}>{project.source}</a>
-                            </h3>
+                            {project.source && (
+                                <h3>
+                                    <strong>Source</strong>:&nbsp;
+                                    <a href={project.source}>
+                                        {project.source}
+                                    </a>
+                                </h3>
+                            )}
                         </div>
                     </div>
                 )}
