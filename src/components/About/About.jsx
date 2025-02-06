@@ -57,7 +57,7 @@ function About() {
 
                 <div className={cx("col-12 col-sm-7", "about-content")}>
                     <div className={cx("content")}>
-                        My name is Nam, I am a frontend developer with over 1
+                        My name is Nam, I am a frontend developer with over 2
                         years of experience in the eld of web development,
                         specializing in
                         <strong> ReactJS</strong> and <strong>NextJs</strong>.
