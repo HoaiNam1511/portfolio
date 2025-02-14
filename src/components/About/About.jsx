@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 import classNames from "classnames/bind";
 import { useEffect } from "react";
 
-import cv from "../../asset/file/ChuHoaiNam-Fresher.pdf";
+import cv from "../../asset/file/CV_ChuHoaiNam_FrontendDev.pdf";
 import avatar from "../../asset/image/avt1.jpg";
 import styles from "./About.module.scss";
 
