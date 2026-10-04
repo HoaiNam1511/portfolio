@@ -57,17 +57,15 @@ function About() {
 
                 <div className={cx("col-12 col-sm-7", "about-content")}>
                     <div className={cx("content")}>
-                        My name is Nam, I am a frontend developer with over 2
-                        years of experience in the eld of web development,
-                        specializing in
-                        <strong> ReactJS</strong> and <strong>NextJs</strong>.
-                        Additionally, I have a background in backend programming
-                        using <strong>NodeJs</strong> with
-                        <strong> ExpressJs</strong> (Sequelize). I am proactive
-                        and independent in my work, but I am also willing to be
-                        supportive and open-minded in teamwork. I am constantly
-                        seeking opportunities to learn more about new
-                        technologies and improve my programming skills.
+                        My name is Nam, a frontend developer with 3+ years of
+                        experience building <strong>ReactJS</strong> and{" "}
+                        <strong>NextJS</strong> applications. I focus on
+                        reusable UI components, state management, RESTful API
+                        integration, <strong>Micro Frontend</strong>, and unit
+                        testing. I have worked on business platforms, e-commerce
+                        management systems, and end-user websites, and I enjoy
+                        learning new technologies while collaborating closely
+                        with product and engineering teams.
                     </div>
                     <a
                         href={cv}

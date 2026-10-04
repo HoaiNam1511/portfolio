@@ -1,8 +1,18 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock("swiper/react", () => {
+    const React = require("react");
+
+    return {
+        Swiper: ({ children }) => React.createElement("div", null, children),
+        SwiperSlide: ({ children }) =>
+            React.createElement("div", null, children),
+    };
+});
+
+test("renders portfolio introduction", () => {
+    render(<App />);
+
+    expect(screen.getByText("HELLO")).toBeInTheDocument();
 });

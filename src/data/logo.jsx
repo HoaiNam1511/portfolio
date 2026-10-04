@@ -1,7 +1,3 @@
-import bootstrap from "../asset/logo/bootstrap.png";
-import csharp from "../asset/logo/c-sharp.png";
-import css from "../asset/logo/css-3.png";
-import html from "../asset/logo/html.png";
 import js from "../asset/logo/js.png";
 import mysql from "../asset/logo/mysql.png";
 import react from "../asset/logo/react.png";
@@ -11,46 +7,27 @@ import typescript from "../asset/logo/typescript.png";
 
 export const listLogo = [
     {
-        logo: html,
-        title: "HTML",
-    },
-    {
-        logo: css,
-        title: "CSS",
-    },
-    {
         logo: js,
-        title: "Javascript",
+        title: "JavaScript",
     },
     {
         logo: typescript,
-        title: "Typescript",
+        title: "TypeScript",
     },
     {
         logo: react,
-
-        title: "ReactJs",
-    },
-    {
-        logo: bootstrap,
-
-        title: "Bootstrap",
-    },
-    {
-        logo: csharp,
-
-        title: "C#",
+        title: "ReactJS",
     },
     {
         logo: redux,
-        title: "Redux",
+        title: "Redux Toolkit",
     },
     {
         logo: nodejs,
-        title: "NodeJs",
+        title: "NodeJS",
     },
     {
         logo: mysql,
-        title: "MySql",
+        title: "MySQL",
     },
 ];

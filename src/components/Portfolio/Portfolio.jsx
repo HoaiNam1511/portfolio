@@ -15,7 +15,7 @@ function Project() {
     const isProjectClick = (item) => {
         setPopupShow(true);
         setProject(item);
-        setCurrentImg(item.images[0].image);
+        setCurrentImg(item.images?.[0]?.image);
     };
 
     useEffect(() => {
@@ -33,19 +33,30 @@ function Project() {
         >
             <h1 className={cx("header-title")}>Projects</h1>
             <div className={cx("row gx-0", "list")}>
-                {dataProject.map((item, index) => (
-                    <div
-                        key={index}
-                        onClick={() => isProjectClick(item)}
-                        data-content={item.name}
-                        className={cx("col-12 col-lg-4 col-md-6", "item")}
-                    >
-                        <img
-                            src={item.images[0].image}
-                            alt=""
-                        />
-                    </div>
-                ))}
+                {dataProject.map((item, index) => {
+                    const coverImage = item.images?.[0]?.image;
+
+                    return (
+                        <div
+                            key={index}
+                            onClick={() => isProjectClick(item)}
+                            data-content={item.name}
+                            className={cx("col-12 col-lg-4 col-md-6", "item")}
+                        >
+                            {coverImage ? (
+                                <img
+                                    src={coverImage}
+                                    alt=""
+                                />
+                            ) : (
+                                <div className={cx("project-card")}>
+                                    <h3>{item.name}</h3>
+                                    <p>{item.description}</p>
+                                </div>
+                            )}
+                        </div>
+                    );
+                })}
             </div>
 
             <div className={cx({ "over-lay": popupShow })}></div>
@@ -61,41 +72,51 @@ function Project() {
                         </button>
 
                         {/* Image container */}
-                        <div
-                            className={cx("col-12 col-lg-6", "image-container")}
-                        >
-                            <div className={cx("image-wrapper")}>
-                                <img
-                                    className={cx("main-image")}
-                                    src={currentImg}
-                                    alt=""
-                                />
-                            </div>
-                            <Swiper
-                                className={cx("swiper-list")}
-                                spaceBetween={3}
-                                slidesPerView={3}
-                                onSlideChange={() =>
-                                    console.log("slide change")
-                                }
+                        {project.images?.length > 0 && (
+                            <div
+                                className={cx(
+                                    "col-12 col-lg-6",
+                                    "image-container"
+                                )}
                             >
-                                {project.images.map((item, index) => (
-                                    <SwiperSlide key={index}>
-                                        <img
-                                            className={cx("image-slide")}
-                                            src={item.image}
-                                            alt=""
-                                            onClick={() =>
-                                                setCurrentImg(item.image)
-                                            }
-                                        />
-                                    </SwiperSlide>
-                                ))}
-                            </Swiper>
-                        </div>
+                                <div className={cx("image-wrapper")}>
+                                    <img
+                                        className={cx("main-image")}
+                                        src={currentImg}
+                                        alt=""
+                                    />
+                                </div>
+                                <Swiper
+                                    className={cx("swiper-list")}
+                                    spaceBetween={3}
+                                    slidesPerView={3}
+                                >
+                                    {project.images.map((item, index) => (
+                                        <SwiperSlide key={index}>
+                                            <img
+                                                className={cx("image-slide")}
+                                                src={item.image}
+                                                alt=""
+                                                onClick={() =>
+                                                    setCurrentImg(item.image)
+                                                }
+                                            />
+                                        </SwiperSlide>
+                                    ))}
+                                </Swiper>
+                            </div>
+                        )}
 
                         {/* Description  */}
-                        <div className={cx("col-12 col-lg-6", "description")}>
+                        <div
+                            className={cx(
+                                "col-12",
+                                project.images?.length > 0
+                                    ? "col-lg-6"
+                                    : "col-lg-12",
+                                "description"
+                            )}
+                        >
                             <h1>{project.name}</h1>
                             <h3>
                                 <strong>Description</strong>:&nbsp;
@@ -115,10 +136,12 @@ function Project() {
                                 <strong>Technology</strong>: &nbsp;
                                 {project.technologies}
                             </h3>
-                            <h3>
-                                <strong>Demo</strong>:&nbsp;
-                                <a href={project.link}>{project.link}</a>
-                            </h3>
+                            {project.link && (
+                                <h3>
+                                    <strong>Demo</strong>:&nbsp;
+                                    <a href={project.link}>{project.link}</a>
+                                </h3>
+                            )}
                             {project.source && (
                                 <h3>
                                     <strong>Source</strong>:&nbsp;

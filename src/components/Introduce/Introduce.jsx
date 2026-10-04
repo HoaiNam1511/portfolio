@@ -16,9 +16,16 @@ function Introduce() {
     });
 
     useEffect(() => {
-        setTimeout(() => {
-            setTyping({ typingShow: [...typing.typingShow, 1], cursor: 1 });
+        const timer = setTimeout(() => {
+            setTyping((prevTyping) => ({
+                typingShow: [...prevTyping.typingShow, 1],
+                cursor: 1,
+            }));
         }, 2200);
+
+        return () => {
+            clearTimeout(timer);
+        };
     }, []);
 
     return (
@@ -43,7 +50,7 @@ function Introduce() {
                     typing.cursor === 1 ? "active" : ""
                 )}
             >
-                I'm a front-end developer
+                I'm a frontend developer
             </h3>
             <div className={cx("d-flex")}>
                 <a

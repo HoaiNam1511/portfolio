@@ -52,7 +52,7 @@ function Header() {
     ];
 
     const [currentElement, setCurrentElement] = useState(0);
-    const [currentPosition, setCurrentPosition] = useState(navList[0]);
+    const currentPosition = navList[currentElement] || navList[0];
 
     useEffect(() => {
         const handleScroll = (event) => {
