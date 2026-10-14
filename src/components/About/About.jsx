@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 import classNames from "classnames/bind";
 import { useEffect } from "react";
 
-import cv from "../../asset/file/CV_ChuHoaiNam_FrontendDev.pdf";
+import cv from "../../asset/file/CV-Chu-Hoai-Nam.pdf";
 import avatar from "../../asset/image/avt1.jpg";
 import styles from "./About.module.scss";
 
@@ -22,13 +22,13 @@ function About() {
         {
             title1: "Knowledge",
             title2: "Ha Long University",
-            title3: "2019 - 2023",
+            title3: "Aug 2019 - May 2023",
             icon: CalendarMonthIcon,
         },
         {
             title1: "Major",
             title2: "Computer Science",
-            title3: "GPA: 3.11",
+            title3: "GPA: 3.15/4",
             icon: ImportContactsIcon,
         },
         {
@@ -57,15 +57,14 @@ function About() {
 
                 <div className={cx("col-12 col-sm-7", "about-content")}>
                     <div className={cx("content")}>
-                        My name is Nam, a frontend developer with 3+ years of
-                        experience building <strong>ReactJS</strong> and{" "}
-                        <strong>NextJS</strong> applications. I focus on
-                        reusable UI components, state management, RESTful API
-                        integration, <strong>Micro Frontend</strong>, and unit
-                        testing. I have worked on business platforms, e-commerce
-                        management systems, and end-user websites, and I enjoy
-                        learning new technologies while collaborating closely
-                        with product and engineering teams.
+                        My name is Nam, a frontend developer with 4+ years of
+                        experience building web applications with{" "}
+                        <strong>ReactJS</strong>, <strong>NextJS</strong> and{" "}
+                        <strong>TypeScript</strong>. I am experienced in{" "}
+                        <strong>Micro Frontend</strong> architecture for SaaS
+                        platforms, delivering CRM, BPMN workflow automation and
+                        AI Agent features, and I write unit and integration
+                        tests with Vitest, React Testing Library and MSW.
                     </div>
                     <a
                         href={cv}

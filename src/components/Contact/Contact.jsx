@@ -32,7 +32,7 @@ function Contact() {
         },
         {
             title1: "Address",
-            title2: "Ha Noi, Viet Nam",
+            title2: "Cau Giay District, Hanoi",
             icon: PlaceIcon,
         },
     ];

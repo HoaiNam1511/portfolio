@@ -1,3 +1,12 @@
+import pj2_1 from "../asset/image/pj2_1.png";
+import pj2_2 from "../asset/image/pj2_2.png";
+import pj2_3 from "../asset/image/pj2_3.png";
+import pj2_4 from "../asset/image/pj2_4.png";
+import pj2_5 from "../asset/image/pj2_5.png";
+import pj2_6 from "../asset/image/pj2_6.png";
+import pj2_7 from "../asset/image/pj2_7.png";
+import pj2_8 from "../asset/image/pj2_8.png";
+
 import pj6_1 from "../asset/pj4/img1.png";
 import pj6_2 from "../asset/pj4/img2.png";
 import pj6_3 from "../asset/pj4/img3.png";
@@ -9,30 +18,19 @@ export const dataProject = [
     {
         name: "Cogover Platform",
         description:
-            "Low-code business platform for process configuration, workflow modules, and AI Agent configuration. I built ReactJS interfaces with Micro Frontend architecture, worked with structured data, permissions, RESTful API integration, reusable UI components, and state management.",
+            "SaaS platform (Stringee) built on a 10+ app Micro Frontend architecture with Module Federation and a shared UI kit. I built the CRM core (dynamic record forms with FormBuilder, object and filter configuration, list views, related-list tables, data import), extended bpmn-js for a BPMN workflow engine with 25+ node types and a real-time WebSocket runtime, and built the AI Agent platform (agent builder, tool configuration forms and an in-app chat box in the context of a CRM record). Covered with unit and integration tests using Vitest, React Testing Library and MSW.",
         technologies:
-            "ReactJS, TypeScript, NextJS, Micro Frontend, Context API, TanStack Query, TailwindCSS, React Testing Library",
+            "ReactJS, TypeScript, Module Federation, TanStack Query, Redux Toolkit, React Hook Form, bpmn-js, TailwindCSS, Vitest",
         createAt: "November 2025 - Present",
-        link: "https://cogover.com",
-        member: 15,
-    },
-    {
-        name: "EBOND",
-        description:
-            "Japanese e-commerce management system for products, customers, promotions, and system reports across multiple stores.",
-        technologies:
-            "NextJS, TypeScript, Redux Toolkit, Ant Design, NodeJS integration",
-        createAt: "January 2024 - May 2024",
-        member: 8,
+        link: "https://id.cogover.com/",
     },
     {
         name: "Mainichi Nihongo",
         description:
-            "End-user website for Japanese learners and business customers in Vietnam, Myanmar, and Cambodia.",
-        technologies: "NextJS, TypeScript, NodeJS, PostgreSQL",
+            "Multi-language (VI/EN/JA) SSR website for Japanese learners in Vietnam, Myanmar and Cambodia (OhmidasVN). I built interactive Hiragana, Katakana and number charts, a virtual Japanese keyboard, the N5–N3 course catalog, blog and feedback form, plus email and social sign-in, password recovery and registration with company codes, responsive across mobile, tablet and desktop.",
+        technologies: "ReactJS, NextJS, TypeScript, Material UI",
         createAt: "June 2023 - December 2023",
         link: "https://www.mainichi-nihongo.net",
-        member: 4,
         images: [
             { image: pj6_1 },
             { image: pj6_2 },
@@ -40,6 +38,27 @@ export const dataProject = [
             { image: pj6_4 },
             { image: pj6_5 },
             { image: pj6_6 },
+        ],
+    },
+    {
+        name: "Shoe Shop E-commerce",
+        description:
+            "Full-stack e-commerce website. Storefront with product filtering (style, material, price, gender), search, wishlist, a persisted cart and a validated checkout form, backed by an Express/Sequelize REST API on MySQL with JWT access/refresh tokens, role-based authorization and image upload.",
+        technologies:
+            "ReactJS, Redux Toolkit, Redux Persist, SCSS, Node.js, Express, Sequelize, MySQL, JWT",
+        createAt: "November 2022 - June 2023",
+        link: "https://ananas-shoes-shop.vercel.app",
+        source: "https://github.com/HoaiNam1511/shoe-shop-frontend",
+        member: 1,
+        images: [
+            { image: pj2_1 },
+            { image: pj2_2 },
+            { image: pj2_3 },
+            { image: pj2_4 },
+            { image: pj2_5 },
+            { image: pj2_6 },
+            { image: pj2_7 },
+            { image: pj2_8 },
         ],
     },
 ];
