@@ -7,6 +7,13 @@ import pj2_6 from "../asset/image/pj2_6.png";
 import pj2_7 from "../asset/image/pj2_7.png";
 import pj2_8 from "../asset/image/pj2_8.png";
 
+import pj5_1 from "../asset/pj5/img1.png";
+import pj5_2 from "../asset/pj5/img2.png";
+import pj5_3 from "../asset/pj5/img3.png";
+import pj5_4 from "../asset/pj5/img4.png";
+import pj5_5 from "../asset/pj5/img5.png";
+import pj5_6 from "../asset/pj5/img6.png";
+
 import pj6_1 from "../asset/pj4/img1.png";
 import pj6_2 from "../asset/pj4/img2.png";
 import pj6_3 from "../asset/pj4/img3.png";
@@ -23,6 +30,23 @@ export const dataProject = [
             "ReactJS, TypeScript, Module Federation, TanStack Query, Redux Toolkit, React Hook Form, bpmn-js, TailwindCSS, Vitest",
         createAt: "November 2025 - Present",
         link: "https://id.cogover.com/",
+    },
+    {
+        name: "Feelex E-commerce",
+        description:
+            "NextJS 14 App Router (SSR) e-commerce storefront with 40K+ monthly visits (Ozovn). I built the product catalog, category pages with faceted filters, search, flash sale and product-detail pages with variants and reviews, plus the full cart and checkout flow with vouchers, reward points and SePay payment. Handled SEO and performance (metadata, image optimization, lower CLS) and integrated Google Tag Manager and Facebook Pixel.",
+        technologies:
+            "NextJS 14, TypeScript, TailwindCSS, SWR, React Hook Form, Zod, NextAuth, Docker, GitHub Actions",
+        createAt: "April 2025 - October 2025",
+        link: "https://feelex.vn",
+        images: [
+            { image: pj5_1 },
+            { image: pj5_2 },
+            { image: pj5_3 },
+            { image: pj5_4 },
+            { image: pj5_5 },
+            { image: pj5_6 },
+        ],
     },
     {
         name: "Mainichi Nihongo",

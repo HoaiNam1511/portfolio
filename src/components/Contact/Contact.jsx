@@ -1,5 +1,6 @@
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 import PersonIcon from "@mui/icons-material/Person";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
@@ -38,6 +39,10 @@ function Contact() {
     ];
 
     const networkData = [
+        {
+            icon: LinkedInIcon,
+            url: "https://www.linkedin.com/in/ho%C3%A0i-nam-a46750258/",
+        },
         {
             icon: FacebookIcon,
             url: "https://www.facebook.com/hoainam151101",
