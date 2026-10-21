@@ -7,6 +7,13 @@ import pj2_6 from "../asset/image/pj2_6.png";
 import pj2_7 from "../asset/image/pj2_7.png";
 import pj2_8 from "../asset/image/pj2_8.png";
 
+import cg_1 from "../asset/cogover/img1.jpg";
+import cg_2 from "../asset/cogover/img2.jpg";
+import cg_3 from "../asset/cogover/img3.jpg";
+import cg_4 from "../asset/cogover/img4.jpg";
+import cg_5 from "../asset/cogover/img5.jpg";
+import cg_6 from "../asset/cogover/img6.jpg";
+
 import pj5_1 from "../asset/pj5/img1.png";
 import pj5_2 from "../asset/pj5/img2.png";
 import pj5_3 from "../asset/pj5/img3.png";
@@ -30,6 +37,14 @@ export const dataProject = [
             "ReactJS, TypeScript, Module Federation, TanStack Query, Redux Toolkit, React Hook Form, bpmn-js, TailwindCSS, Vitest",
         createAt: "November 2025 - Present",
         link: "https://id.cogover.com/",
+        images: [
+            { image: cg_1 },
+            { image: cg_2 },
+            { image: cg_3 },
+            { image: cg_4 },
+            { image: cg_5 },
+            { image: cg_6 },
+        ],
     },
     {
         name: "Feelex E-commerce",
