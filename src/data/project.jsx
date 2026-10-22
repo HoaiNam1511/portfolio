@@ -1,3 +1,36 @@
+import pj1_1 from "../asset/image/pj1_1.png";
+import pj1_2 from "../asset/image/pj1_2.png";
+import pj1_3 from "../asset/image/pj1_3.png";
+import pj1_4 from "../asset/image/pj1_4.png";
+
+import pj3_1 from "../asset/pj1/img1.PNG";
+import pj3_2 from "../asset/pj1/img2.PNG";
+import pj3_3 from "../asset/pj1/img3.PNG";
+import pj3_4 from "../asset/pj1/img4.PNG";
+import pj3_5 from "../asset/pj1/img5.PNG";
+import pj3_6 from "../asset/pj1/img6.PNG";
+import pj3_7 from "../asset/pj1/img7.PNG";
+import pj3_8 from "../asset/pj1/img8.PNG";
+import pj3_9 from "../asset/pj1/img9.PNG";
+import pj3_10 from "../asset/pj1/img10.PNG";
+
+import pj4_1 from "../asset/pj2/img1.PNG";
+import pj4_2 from "../asset/pj2/img2.PNG";
+import pj4_3 from "../asset/pj2/img3.PNG";
+import pj4_4 from "../asset/pj2/img4.PNG";
+import pj4_5 from "../asset/pj2/img5.PNG";
+import pj4_6 from "../asset/pj2/img6.PNG";
+import pj4_7 from "../asset/pj2/img7.PNG";
+import pj4_8 from "../asset/pj2/img8.PNG";
+import pj4_9 from "../asset/pj2/img9.PNG";
+import pj4_10 from "../asset/pj2/img10.PNG";
+
+import pj7_1 from "../asset/pj3/img1.png";
+import pj7_2 from "../asset/pj3/img2.png";
+import pj7_3 from "../asset/pj3/img3.png";
+import pj7_4 from "../asset/pj3/img4.png";
+import pj7_5 from "../asset/pj3/img5.png";
+
 import pj2_1 from "../asset/image/pj2_1.png";
 import pj2_2 from "../asset/image/pj2_2.png";
 import pj2_3 from "../asset/image/pj2_3.png";
@@ -98,6 +131,85 @@ export const dataProject = [
             { image: pj2_6 },
             { image: pj2_7 },
             { image: pj2_8 },
+        ],
+    },
+    {
+        name: "Pizza Restaurant",
+        description:
+            "This project is website of a pizza restaurants, project has key features such as: booking, order, send mail, filter product, search, add to card, fully responsive",
+        technologies: "ReactJs, Redux, ExpressJs (Sequelize), MySql",
+        createAt: "April 11, 2023 - May 18, 2023",
+        link: "https://pizza-restaurant-fe.vercel.app",
+        source: "https://github.com/HoaiNam1511/pizza-restaurant-frontend",
+        member: 1,
+        images: [
+            { image: pj4_1 },
+            { image: pj4_2 },
+            { image: pj4_3 },
+            { image: pj4_4 },
+            { image: pj4_5 },
+            { image: pj4_6 },
+            { image: pj4_7 },
+            { image: pj4_8 },
+            { image: pj4_9 },
+            { image: pj4_10 },
+        ],
+    },
+    {
+        name: "Pizza Restaurant Admin",
+        description:
+            "This project use for product management, project has key features such as: CRUD (product, category, order, account), login, reset password, sort, filter",
+        technologies:
+            "ReactJs, Redux, ExpressJs (Sequelize), MySql, JWT, RESTful APIs",
+        createAt: "April 21, 2023 - May 25, 2023",
+        link: "https://pizza-restaurant-beta.vercel.app",
+        source: "https://github.com/HoaiNam1511/pizza-restaurant",
+        member: 1,
+        images: [
+            { image: pj3_1 },
+            { image: pj3_2 },
+            { image: pj3_3 },
+            { image: pj3_4 },
+            { image: pj3_5 },
+            { image: pj3_6 },
+            { image: pj3_7 },
+            { image: pj3_8 },
+            { image: pj3_9 },
+            { image: pj3_10 },
+        ],
+    },
+    {
+        name: "Shoes Shop Admin",
+        description:
+            "This project use for product management, project has key features such as: CRUD (product, category, user), sort, upload image, login, auth",
+        technologies:
+            "ReactJs, Redux, ExpressJs (Sequelize), MySql, JWT, RESTful APIs",
+        createAt: "November 5, 2022 - January 8, 2023",
+        link: "https://shoes-shop-admin-ten.vercel.app/login",
+        source: "https://github.com/HoaiNam1511/shoes-shop",
+        member: 1,
+        images: [
+            { image: pj1_1 },
+            { image: pj1_2 },
+            { image: pj1_3 },
+            { image: pj1_4 },
+        ],
+    },
+    {
+        name: "My kitchen",
+        description:
+            "This project is cooking guide app, project has key features such as: register, login, add wish-list, search",
+        technologies: "React Native, Php, MySql",
+        createAt: "September 21, 2021 - November 16, 2021",
+        link: "https://github.com/HoaiNam1511/MyKitchen",
+        source: "https://github.com/HoaiNam1511/MyKitchen",
+        member: 1,
+        images: [
+            { image: pj7_1 },
+            { image: pj7_2 },
+            { image: pj7_3 },
+            { image: pj7_4 },
+            { image: pj7_5 },
         ],
     },
 ];
