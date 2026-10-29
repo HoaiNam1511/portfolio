@@ -73,45 +73,6 @@ $qualification-line: 2px;
         }
     }
 
-    .btn-download {
-        border: none;
-        height: 45px;
-        padding: 0 35px;
-        border-radius: 4px;
-        text-transform: uppercase;
-        font-weight: 500;
-        background-image: -webkit-linear-gradient(
-            0deg,
-            #8490ff 0%,
-            #62bdfc 100%
-        );
-        transition: background-color 0.2s;
-        color: #fff;
-
-        .icon {
-            margin-left: 5px;
-        }
-
-        &:hover {
-            background-color: #e6e6e6;
-        }
-
-        @include media-breakpoint-md() {
-            height: 38px;
-            padding: 0 25px;
-            margin-top: 10px;
-        }
-
-        @include media-breakpoint-sm() {
-            height: 30px;
-            padding: 0 15px;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 1.6rem;
-        }
-    }
-
     ///Qualification
     .qualification {
         width: $qualification-width;

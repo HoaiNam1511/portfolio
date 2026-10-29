@@ -1,5 +1,4 @@
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import DownloadIcon from "@mui/icons-material/Download";
 import ImportContactsIcon from "@mui/icons-material/ImportContacts";
 import SchoolIcon from "@mui/icons-material/School";
 import Aos from "aos";
@@ -7,7 +6,6 @@ import "aos/dist/aos.css";
 import classNames from "classnames/bind";
 import { useEffect } from "react";
 
-import cv from "../../asset/file/CV-Chu-Hoai-Nam.pdf";
 import avatar from "../../asset/image/avt1.jpg";
 import styles from "./About.module.scss";
 
@@ -57,7 +55,7 @@ function About() {
 
                 <div className={cx("col-12 col-sm-7", "about-content")}>
                     <div className={cx("content")}>
-                        My name is Nam, a frontend developer with 3+ years of
+                        My name is Nam, a frontend developer with 4+ years of
                         experience building web applications with{" "}
                         <strong>ReactJS</strong>, <strong>NextJS</strong> and{" "}
                         <strong>TypeScript</strong>. I am experienced in{" "}
@@ -66,15 +64,6 @@ function About() {
                         AI Agent features, and I write unit and integration
                         tests with Vitest, React Testing Library and MSW.
                     </div>
-                    <a
-                        href={cv}
-                        download
-                    >
-                        <button className={cx("btn-download")}>
-                            Download CV
-                            <DownloadIcon className={cx("icon")} />
-                        </button>
-                    </a>
                 </div>
             </div>
 
